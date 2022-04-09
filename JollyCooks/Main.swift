@@ -16,7 +16,7 @@ struct Main: View {
                     .ignoresSafeArea()
                     .frame(width: 1800, height: 1034)
                     .opacity(0.95)
-                
+                //testing commit a seocnd time
                 Image("Logo")
                     .resizable()
                     .scaledToFit()
