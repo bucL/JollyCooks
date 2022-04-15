@@ -1,4 +1,4 @@
-# 11SDD-Group-C
+# Jollycooks
 ## Things to remember 
 
 1. ALWAYS PULL CHANGES FROM THE REPOSITORY BEFORE WORKING ON CODE
