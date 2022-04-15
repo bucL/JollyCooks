@@ -6,12 +6,28 @@
 //
 
 import SwiftUI
+import UIKit
+import Firebase
 
 @main
 struct JollyCooksApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
     var body: some Scene {
         WindowGroup {
             Main()
         }
     }
+}
+
+
+class AppDelegate: NSObject, UIApplicationDelegate {
+
+  func application(_ application: UIApplication,
+    didFinishLaunchingWithOptions launchOptions:
+                   [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    FirebaseApp.configure()
+
+    return true
+  }
 }
