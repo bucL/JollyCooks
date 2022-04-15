@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct Main: View {
+    
+    
     var body: some View {
         NavigationView{
             ZStack{
@@ -24,12 +26,12 @@ struct Main: View {
                     .offset(y:-100)
                 
                 
-                Text("Username...")
+                TextField("Username...", text: <#Binding<String>#>)
                     .frame(width:310, height:55)
                     .foregroundColor(Color.gray)
                     .background(Color.white)
                     .offset(y:150)
-                Text("Password...")
+                SecureField("Password...", text: <#Binding<String>#>)
                     .frame(width:310, height:55)
                     .foregroundColor(Color.gray)
                     .background(Color.white)

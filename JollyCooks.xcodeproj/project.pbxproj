@@ -45,6 +45,8 @@
 		4AE9966B27E1913F007BCE14 /* AddYellowBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE9966A27E1913F007BCE14 /* AddYellowBox.swift */; };
 		4AFB678627E0210D00039787 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFB678527E0210D00039787 /* Main.swift */; };
 		68A500C02809388B00C8A304 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 68A500BF2809388B00C8A304 /* GoogleService-Info.plist */; };
+		68A500C328093EBF00C8A304 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A500C228093EBF00C8A304 /* User.swift */; };
+		68A500C62809401D00C8A304 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A500C52809401D00C8A304 /* UserViewModel.swift */; };
 		A41E63F558AA86B29B09FDBA /* Pods_JollyCooks_JollyCooksUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D97CA891A9ABB670BA855CDB /* Pods_JollyCooks_JollyCooksUITests.framework */; };
 		B313DF9CD0786AA1CBC73021 /* Pods_JollyCooks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 926988BF190853681D959D49 /* Pods_JollyCooks.framework */; };
 		FF5656A7A929209FF2306BC3 /* Pods_JollyCooksTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA04A9AC23B7E5FF56ACFDDD /* Pods_JollyCooksTests.framework */; };
@@ -115,6 +117,8 @@
 		4D4FAFFB9A0E39D3B519C569 /* Pods-JollyCooks-JollyCooksUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JollyCooks-JollyCooksUITests.debug.xcconfig"; path = "Target Support Files/Pods-JollyCooks-JollyCooksUITests/Pods-JollyCooks-JollyCooksUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		569666F24FFBF12EB2541585 /* Pods-JollyCooks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JollyCooks.debug.xcconfig"; path = "Target Support Files/Pods-JollyCooks/Pods-JollyCooks.debug.xcconfig"; sourceTree = "<group>"; };
 		68A500BF2809388B00C8A304 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		68A500C228093EBF00C8A304 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		68A500C52809401D00C8A304 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		926988BF190853681D959D49 /* Pods_JollyCooks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JollyCooks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1593DDD0588895E6F353770 /* Pods-JollyCooksTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JollyCooksTests.debug.xcconfig"; path = "Target Support Files/Pods-JollyCooksTests/Pods-JollyCooksTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CA04A9AC23B7E5FF56ACFDDD /* Pods_JollyCooksTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JollyCooksTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -199,6 +203,8 @@
 		4A417F8D27E01A6500038ED8 /* JollyCooks */ = {
 			isa = PBXGroup;
 			children = (
+				68A500C42809400D00C8A304 /* ViewModel */,
+				68A500C128093EAD00C8A304 /* Model */,
 				68A500BF2809388B00C8A304 /* GoogleService-Info.plist */,
 				4AFB678527E0210D00039787 /* Main.swift */,
 				4A417F8E27E01A6500038ED8 /* JollyCooksApp.swift */,
@@ -310,6 +316,22 @@
 				4AE9966827E18FBA007BCE14 /* AddNotes.swift */,
 			);
 			path = ManualAdd;
+			sourceTree = "<group>";
+		};
+		68A500C128093EAD00C8A304 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				68A500C228093EBF00C8A304 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		68A500C42809400D00C8A304 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				68A500C52809401D00C8A304 /* UserViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		BB7210607ED07B48BD4D01A7 /* Frameworks */ = {
@@ -584,6 +606,7 @@
 				4A9C419827E20EA500517873 /* Bun.swift in Sources */,
 				4AADF9F427E1C141000C7ACB /* Salads.swift in Sources */,
 				4A510CBE27E0925F00D72846 /* CircleImage.swift in Sources */,
+				68A500C328093EBF00C8A304 /* User.swift in Sources */,
 				4AFB678627E0210D00039787 /* Main.swift in Sources */,
 				4AE9966427E189EC007BCE14 /* AddPage.swift in Sources */,
 				4A510CBA27E07F7200D72846 /* FavouriteView.swift in Sources */,
@@ -592,6 +615,7 @@
 				4A9C418A27E1FB9900517873 /* FriedRice.swift in Sources */,
 				4A510CC027E0992E00D72846 /* ProfileBox.swift in Sources */,
 				4A9C419427E207C900517873 /* Foood2.swift in Sources */,
+				68A500C62809401D00C8A304 /* UserViewModel.swift in Sources */,
 				4A1E46F127E140D000CD2187 /* SettingsListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
