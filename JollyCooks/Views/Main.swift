@@ -11,8 +11,6 @@ struct Main: View {
     @EnvironmentObject var user: UserViewModel
     
     @State private var email: String = ""
-    @State private var firstName: String = ""
-    @State private var lastName: String = ""
     @State private var password: String = ""
     
     var body: some View {
@@ -47,29 +45,43 @@ struct Main: View {
                     .background(Color.white)
                     .padding(.bottom,5)
                     .offset(y:205)
+                
                 Button(action: {
                     user.signIn(email: email, password: password)
                 }) {
                     Text("Sign In")
                 }
+                .frame(width: 100, height: 40)
+                .background(Color.orange)
+                .foregroundColor(Color.white)
+                .cornerRadius(10)
+                .offset(y: 260)
                 
+                
+                NavigationLink(destination: SignUpView()) {
+                    Text("Sign Up")
+                }
+                .frame(width: 100, height: 40)
+                .background(Color.orange)
+                .foregroundColor(Color.white)
+                .cornerRadius(10)
+                .offset(y: 310)
+
             }
-            //Text("Sign In")
-            //.foregroundColor(Color.gray)
-            // .padding(25)
-            // .background(Color.orange)
             
             
             
             
             
             
-        } // Vstack End
-        /**.background(
-         Image("93-937875_m").opacity(0.87).ignoresSafeArea().)*/
+            
+            
+        }
+        .navigationBarTitle("")
+        .navigationViewStyle(StackNavigationViewStyle())
+        .navigationBarHidden(true)
         
-        
-    }//Navigation
+    }
 }
 
 
