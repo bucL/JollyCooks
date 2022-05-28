@@ -13,8 +13,6 @@
 		4A417F9127E01A6500038ED8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A417F9027E01A6500038ED8 /* ContentView.swift */; };
 		4A417F9327E01A6600038ED8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A417F9227E01A6600038ED8 /* Assets.xcassets */; };
 		4A417F9627E01A6600038ED8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A417F9527E01A6600038ED8 /* Preview Assets.xcassets */; };
-		4A417FA127E01A6600038ED8 /* JollyCooksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A417FA027E01A6600038ED8 /* JollyCooksTests.swift */; };
-		4A417FAC27E01A6600038ED8 /* JollyCooksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A417FAB27E01A6600038ED8 /* JollyCooksUITests.swift */; };
 		4A510CB427E07F0D00D72846 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A510CB327E07F0D00D72846 /* HomeView.swift */; };
 		4A510CB627E07F3800D72846 /* ManualAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A510CB527E07F3800D72846 /* ManualAddView.swift */; };
 		4A510CB827E07F4C00D72846 /* PlannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A510CB727E07F4C00D72846 /* PlannerView.swift */; };
@@ -47,29 +45,8 @@
 		68A500C02809388B00C8A304 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 68A500BF2809388B00C8A304 /* GoogleService-Info.plist */; };
 		68A500C328093EBF00C8A304 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A500C228093EBF00C8A304 /* User.swift */; };
 		68A500C62809401D00C8A304 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A500C52809401D00C8A304 /* UserViewModel.swift */; };
-		68A500C82809510900C8A304 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A500C72809510800C8A304 /* StartView.swift */; };
-		68A500CA2809551E00C8A304 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A500C92809551D00C8A304 /* SignUpView.swift */; };
-		A41E63F558AA86B29B09FDBA /* Pods_JollyCooks_JollyCooksUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D97CA891A9ABB670BA855CDB /* Pods_JollyCooks_JollyCooksUITests.framework */; };
 		B313DF9CD0786AA1CBC73021 /* Pods_JollyCooks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 926988BF190853681D959D49 /* Pods_JollyCooks.framework */; };
-		FF5656A7A929209FF2306BC3 /* Pods_JollyCooksTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA04A9AC23B7E5FF56ACFDDD /* Pods_JollyCooksTests.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		4A417F9D27E01A6600038ED8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4A417F8327E01A6500038ED8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4A417F8A27E01A6500038ED8;
-			remoteInfo = JollyCooks;
-		};
-		4A417FA827E01A6600038ED8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4A417F8327E01A6500038ED8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4A417F8A27E01A6500038ED8;
-			remoteInfo = JollyCooks;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2E37453CD385A21CC9EF158C /* Pods-JollyCooksTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JollyCooksTests.release.xcconfig"; path = "Target Support Files/Pods-JollyCooksTests/Pods-JollyCooksTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -81,10 +58,8 @@
 		4A417F9227E01A6600038ED8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A417F9527E01A6600038ED8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4A417F9727E01A6600038ED8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4A417F9C27E01A6600038ED8 /* JollyCooksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JollyCooksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A417FA027E01A6600038ED8 /* JollyCooksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JollyCooksTests.swift; sourceTree = "<group>"; };
 		4A417FA227E01A6600038ED8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4A417FA727E01A6600038ED8 /* JollyCooksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JollyCooksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A417FAB27E01A6600038ED8 /* JollyCooksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JollyCooksUITests.swift; sourceTree = "<group>"; };
 		4A417FAD27E01A6600038ED8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A510CB327E07F0D00D72846 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -121,8 +96,6 @@
 		68A500BF2809388B00C8A304 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		68A500C228093EBF00C8A304 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		68A500C52809401D00C8A304 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
-		68A500C72809510800C8A304 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
-		68A500C92809551D00C8A304 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		926988BF190853681D959D49 /* Pods_JollyCooks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JollyCooks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1593DDD0588895E6F353770 /* Pods-JollyCooksTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JollyCooksTests.debug.xcconfig"; path = "Target Support Files/Pods-JollyCooksTests/Pods-JollyCooksTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CA04A9AC23B7E5FF56ACFDDD /* Pods_JollyCooksTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JollyCooksTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,22 +110,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B313DF9CD0786AA1CBC73021 /* Pods_JollyCooks.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4A417F9927E01A6600038ED8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FF5656A7A929209FF2306BC3 /* Pods_JollyCooksTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4A417FA427E01A6600038ED8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A41E63F558AA86B29B09FDBA /* Pods_JollyCooks_JollyCooksUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,8 +155,6 @@
 			isa = PBXGroup;
 			children = (
 				4A417F8B27E01A6500038ED8 /* JollyCooks.app */,
-				4A417F9C27E01A6600038ED8 /* JollyCooksTests.xctest */,
-				4A417FA727E01A6600038ED8 /* JollyCooksUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -207,13 +162,19 @@
 		4A417F8D27E01A6500038ED8 /* JollyCooks */ = {
 			isa = PBXGroup;
 			children = (
-				6829F23928095BBA003B1C50 /* Views */,
-				4A417F8E27E01A6500038ED8 /* JollyCooksApp.swift */,
-				68A500C72809510800C8A304 /* StartView.swift */,
 				68A500C42809400D00C8A304 /* ViewModel */,
 				68A500C128093EAD00C8A304 /* Model */,
 				68A500BF2809388B00C8A304 /* GoogleService-Info.plist */,
-				4A417F9427E01A6600038ED8 /* Preview Content */,
+				4AFB678527E0210D00039787 /* Main.swift */,
+				4A417F8E27E01A6500038ED8 /* JollyCooksApp.swift */,
+				4A417F9027E01A6500038ED8 /* ContentView.swift */,
+				4A510CB327E07F0D00D72846 /* HomeView.swift */,
+				4A510CB527E07F3800D72846 /* ManualAddView.swift */,
+				4A9C419527E2098700517873 /* Lunchpage.swift */,
+				4AE9966327E189EC007BCE14 /* AddPage.swift */,
+				4A510CB727E07F4C00D72846 /* PlannerView.swift */,
+				4A510CB927E07F7200D72846 /* FavouriteView.swift */,
+				4A510CBB27E07F8A00D72846 /* ProfileView.swift */,
 				4A9C418427E1FA6000517873 /* Favourites */,
 				4AADF9EF27E1B7A0000C7ACB /* Home Page */,
 				4AE9966027E18986007BCE14 /* ManualAdd */,
@@ -221,6 +182,7 @@
 				4A510CC327E0B12700D72846 /* Profile */,
 				4A417F9227E01A6600038ED8 /* Assets.xcassets */,
 				4A417F9727E01A6600038ED8 /* Info.plist */,
+				4A417F9427E01A6600038ED8 /* Preview Content */,
 			);
 			path = JollyCooks;
 			sourceTree = "<group>";
@@ -291,9 +253,17 @@
 		4AADF9EF27E1B7A0000C7ACB /* Home Page */ = {
 			isa = PBXGroup;
 			children = (
+				4AADF9F027E1B7A9000C7ACB /* New Group */,
 				4AADF9F127E1B7B3000C7ACB /* Dinner.swift */,
 			);
 			path = "Home Page";
+			sourceTree = "<group>";
+		};
+		4AADF9F027E1B7A9000C7ACB /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		4AE9966027E18986007BCE14 /* ManualAdd */ = {
@@ -305,23 +275,6 @@
 				4AE9966827E18FBA007BCE14 /* AddNotes.swift */,
 			);
 			path = ManualAdd;
-			sourceTree = "<group>";
-		};
-		6829F23928095BBA003B1C50 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				4AFB678527E0210D00039787 /* Main.swift */,
-				68A500C92809551D00C8A304 /* SignUpView.swift */,
-				4A417F9027E01A6500038ED8 /* ContentView.swift */,
-				4A510CB327E07F0D00D72846 /* HomeView.swift */,
-				4A510CB527E07F3800D72846 /* ManualAddView.swift */,
-				4A9C419527E2098700517873 /* Lunchpage.swift */,
-				4AE9966327E189EC007BCE14 /* AddPage.swift */,
-				4A510CB727E07F4C00D72846 /* PlannerView.swift */,
-				4A510CB927E07F7200D72846 /* FavouriteView.swift */,
-				4A510CBB27E07F8A00D72846 /* ProfileView.swift */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		68A500C128093EAD00C8A304 /* Model */ = {
@@ -372,45 +325,6 @@
 			productReference = 4A417F8B27E01A6500038ED8 /* JollyCooks.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4A417F9B27E01A6600038ED8 /* JollyCooksTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4A417FB327E01A6600038ED8 /* Build configuration list for PBXNativeTarget "JollyCooksTests" */;
-			buildPhases = (
-				30CAD8B0AC000EB0F5FE73A8 /* [CP] Check Pods Manifest.lock */,
-				4A417F9827E01A6600038ED8 /* Sources */,
-				4A417F9927E01A6600038ED8 /* Frameworks */,
-				4A417F9A27E01A6600038ED8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4A417F9E27E01A6600038ED8 /* PBXTargetDependency */,
-			);
-			name = JollyCooksTests;
-			productName = JollyCooksTests;
-			productReference = 4A417F9C27E01A6600038ED8 /* JollyCooksTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		4A417FA627E01A6600038ED8 /* JollyCooksUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4A417FB627E01A6600038ED8 /* Build configuration list for PBXNativeTarget "JollyCooksUITests" */;
-			buildPhases = (
-				188E78F0FC4E12E57BC7EC31 /* [CP] Check Pods Manifest.lock */,
-				4A417FA327E01A6600038ED8 /* Sources */,
-				4A417FA427E01A6600038ED8 /* Frameworks */,
-				4A417FA527E01A6600038ED8 /* Resources */,
-				77D4089918691ED21976163F /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4A417FA927E01A6600038ED8 /* PBXTargetDependency */,
-			);
-			name = JollyCooksUITests;
-			productName = JollyCooksUITests;
-			productReference = 4A417FA727E01A6600038ED8 /* JollyCooksUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -422,14 +336,6 @@
 				TargetAttributes = {
 					4A417F8A27E01A6500038ED8 = {
 						CreatedOnToolsVersion = 12.5.1;
-					};
-					4A417F9B27E01A6600038ED8 = {
-						CreatedOnToolsVersion = 12.5.1;
-						TestTargetID = 4A417F8A27E01A6500038ED8;
-					};
-					4A417FA627E01A6600038ED8 = {
-						CreatedOnToolsVersion = 12.5.1;
-						TestTargetID = 4A417F8A27E01A6500038ED8;
 					};
 				};
 			};
@@ -447,8 +353,6 @@
 			projectRoot = "";
 			targets = (
 				4A417F8A27E01A6500038ED8 /* JollyCooks */,
-				4A417F9B27E01A6600038ED8 /* JollyCooksTests */,
-				4A417FA627E01A6600038ED8 /* JollyCooksUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -461,20 +365,6 @@
 				4A417F9627E01A6600038ED8 /* Preview Assets.xcassets in Resources */,
 				4A417F9327E01A6600038ED8 /* Assets.xcassets in Resources */,
 				68A500C02809388B00C8A304 /* GoogleService-Info.plist in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4A417F9A27E01A6600038ED8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4A417FA527E01A6600038ED8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,67 +386,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JollyCooks/Pods-JollyCooks-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		188E78F0FC4E12E57BC7EC31 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-JollyCooks-JollyCooksUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		30CAD8B0AC000EB0F5FE73A8 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-JollyCooksTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		77D4089918691ED21976163F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-JollyCooks-JollyCooksUITests/Pods-JollyCooks-JollyCooksUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-JollyCooks-JollyCooksUITests/Pods-JollyCooks-JollyCooksUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JollyCooks-JollyCooksUITests/Pods-JollyCooks-JollyCooksUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		ECF0DC7DBCF6F913105FFA8B /* [CP] Check Pods Manifest.lock */ = {
@@ -602,7 +431,6 @@
 				4A510CB427E07F0D00D72846 /* HomeView.swift in Sources */,
 				4A9C418E27E1FCFB00517873 /* Mark2.swift in Sources */,
 				4AE9966627E18D75007BCE14 /* AddRedBox.swift in Sources */,
-				68A500CA2809551E00C8A304 /* SignUpView.swift in Sources */,
 				4A417F8F27E01A6500038ED8 /* JollyCooksApp.swift in Sources */,
 				4A510CC627E0B36700D72846 /* ProfileBoxWords.swift in Sources */,
 				4A9C419027E1FD3700517873 /* Mark3.swift in Sources */,
@@ -616,7 +444,6 @@
 				68A500C328093EBF00C8A304 /* User.swift in Sources */,
 				4AFB678627E0210D00039787 /* Main.swift in Sources */,
 				4AE9966427E189EC007BCE14 /* AddPage.swift in Sources */,
-				68A500C82809510900C8A304 /* StartView.swift in Sources */,
 				4A510CBA27E07F7200D72846 /* FavouriteView.swift in Sources */,
 				4A9C418627E1FA6800517873 /* Pizza.swift in Sources */,
 				4A510CB827E07F4C00D72846 /* PlannerView.swift in Sources */,
@@ -628,36 +455,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4A417F9827E01A6600038ED8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4A417FA127E01A6600038ED8 /* JollyCooksTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4A417FA327E01A6600038ED8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4A417FAC27E01A6600038ED8 /* JollyCooksUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		4A417F9E27E01A6600038ED8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4A417F8A27E01A6500038ED8 /* JollyCooks */;
-			targetProxy = 4A417F9D27E01A6600038ED8 /* PBXContainerItemProxy */;
-		};
-		4A417FA927E01A6600038ED8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4A417F8A27E01A6500038ED8 /* JollyCooks */;
-			targetProxy = 4A417FA827E01A6600038ED8 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		4A417FAE27E01A6600038ED8 /* Debug */ = {
@@ -784,7 +582,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"JollyCooks/Preview Content\"";
-				DEVELOPMENT_TEAM = FRKVY4JJ8R;
+				DEVELOPMENT_TEAM = 878WK3K4H7;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = JollyCooks/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -807,7 +605,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"JollyCooks/Preview Content\"";
-				DEVELOPMENT_TEAM = FRKVY4JJ8R;
+				DEVELOPMENT_TEAM = 878WK3K4H7;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = JollyCooks/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -819,94 +617,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		4A417FB427E01A6600038ED8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B1593DDD0588895E6F353770 /* Pods-JollyCooksTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FRKVY4JJ8R;
-				INFOPLIST_FILE = JollyCooksTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.phillipshen.JollyCooksTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JollyCooks.app/JollyCooks";
-			};
-			name = Debug;
-		};
-		4A417FB527E01A6600038ED8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E37453CD385A21CC9EF158C /* Pods-JollyCooksTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FRKVY4JJ8R;
-				INFOPLIST_FILE = JollyCooksTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.phillipshen.JollyCooksTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JollyCooks.app/JollyCooks";
-			};
-			name = Release;
-		};
-		4A417FB727E01A6600038ED8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4D4FAFFB9A0E39D3B519C569 /* Pods-JollyCooks-JollyCooksUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FRKVY4JJ8R;
-				INFOPLIST_FILE = JollyCooksUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.phillipshen.JollyCooksUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = JollyCooks;
-			};
-			name = Debug;
-		};
-		4A417FB827E01A6600038ED8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DC50DB3EC8E4192932D46628 /* Pods-JollyCooks-JollyCooksUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FRKVY4JJ8R;
-				INFOPLIST_FILE = JollyCooksUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.phillipshen.JollyCooksUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = JollyCooks;
 			};
 			name = Release;
 		};
@@ -927,24 +637,6 @@
 			buildConfigurations = (
 				4A417FB127E01A6600038ED8 /* Debug */,
 				4A417FB227E01A6600038ED8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4A417FB327E01A6600038ED8 /* Build configuration list for PBXNativeTarget "JollyCooksTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4A417FB427E01A6600038ED8 /* Debug */,
-				4A417FB527E01A6600038ED8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4A417FB627E01A6600038ED8 /* Build configuration list for PBXNativeTarget "JollyCooksUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4A417FB727E01A6600038ED8 /* Debug */,
-				4A417FB827E01A6600038ED8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -15,10 +15,7 @@ struct JollyCooksApp: App {
     
     var body: some Scene {
         WindowGroup {
-            let user  = UserViewModel()
-
-                StartView()
-                .environmentObject(user)
+            Main()
         }
     }
 }
