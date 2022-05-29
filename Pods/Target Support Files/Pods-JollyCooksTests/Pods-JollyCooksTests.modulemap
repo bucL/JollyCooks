@@ -1,6 +1,0 @@
-framework module Pods_JollyCooksTests {
-  umbrella header "Pods-JollyCooksTests-umbrella.h"
-
-  export *
-  module * { export * }
-}
