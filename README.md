@@ -5,3 +5,5 @@
 2. COMMIT CHANGES LOCALLY DURING A PROGRAMMING SESSION
 3. AT THE END OF THE SESSION ALWAYS REMEMBER TO PUSH YOUR CODE TO THE ORIGIN (otherwise known as github)
 4. Ask Phil before making any major changes. ( You should use the Fork feature of github so phil can merge and approve changes )
+
+ps. Roll back to original upload of the project was one with the approval of Phillip -> Evidence in teams discussion. 
