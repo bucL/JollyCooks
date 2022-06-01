@@ -173,13 +173,11 @@
 				4A510CB327E07F0D00D72846 /* HomeView.swift */,
 				4A510CB527E07F3800D72846 /* ManualAddView.swift */,
 				4A9C419527E2098700517873 /* Lunchpage.swift */,
-				4A9C419927E20F7700517873 /* New Group */,
 				4AE9966327E189EC007BCE14 /* AddPage.swift */,
 				4A510CB727E07F4C00D72846 /* PlannerView.swift */,
 				4A510CB927E07F7200D72846 /* FavouriteView.swift */,
 				4A510CBB27E07F8A00D72846 /* ProfileView.swift */,
 				4A9C418427E1FA6000517873 /* Favourites */,
-				4A9C418127E1F6B900517873 /* Planner */,
 				4AADF9EF27E1B7A0000C7ACB /* Home Page */,
 				4AE9966027E18986007BCE14 /* ManualAdd */,
 				4A1E46EF27E140C300CD2187 /* Settings */,
@@ -238,13 +236,6 @@
 			path = "New Group";
 			sourceTree = "<group>";
 		};
-		4A9C418127E1F6B900517873 /* Planner */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Planner;
-			sourceTree = "<group>";
-		};
 		4A9C418427E1FA6000517873 /* Favourites */ = {
 			isa = PBXGroup;
 			children = (
@@ -259,13 +250,6 @@
 				4A9C419127E2054F00517873 /* Onions.swift */,
 			);
 			path = Favourites;
-			sourceTree = "<group>";
-		};
-		4A9C419927E20F7700517873 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 		4AADF9EF27E1B7A0000C7ACB /* Home Page */ = {
