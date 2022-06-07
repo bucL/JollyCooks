@@ -167,21 +167,9 @@
 		4A417F8D27E01A6500038ED8 /* JollyCooks */ = {
 			isa = PBXGroup;
 			children = (
-				4AFB678527E0210D00039787 /* Main.swift */,
 				4A417F8E27E01A6500038ED8 /* JollyCooksApp.swift */,
-				4A417F9027E01A6500038ED8 /* ContentView.swift */,
-				4A510CB327E07F0D00D72846 /* HomeView.swift */,
-				4A510CB527E07F3800D72846 /* ManualAddView.swift */,
-				4A9C419527E2098700517873 /* Lunchpage.swift */,
-				4AE9966327E189EC007BCE14 /* AddPage.swift */,
-				4A510CB727E07F4C00D72846 /* PlannerView.swift */,
-				4A510CB927E07F7200D72846 /* FavouriteView.swift */,
-				4A510CBB27E07F8A00D72846 /* ProfileView.swift */,
-				4A9C418427E1FA6000517873 /* Favourites */,
-				4AADF9EF27E1B7A0000C7ACB /* Home Page */,
-				4AE9966027E18986007BCE14 /* ManualAdd */,
-				4A1E46EF27E140C300CD2187 /* Settings */,
-				4A510CC327E0B12700D72846 /* Profile */,
+				4AED57CE284EE0DD003D8EAF /* Viewmodel */,
+				4AED57CF284EE212003D8EAF /* Data or Objects */,
 				4A417F9227E01A6600038ED8 /* Assets.xcassets */,
 				4A417F9727E01A6600038ED8 /* Info.plist */,
 				4A417F9427E01A6600038ED8 /* Preview Content */,
@@ -277,6 +265,42 @@
 				4AE9966827E18FBA007BCE14 /* AddNotes.swift */,
 			);
 			path = ManualAdd;
+			sourceTree = "<group>";
+		};
+		4AED57CD284EDF56003D8EAF /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		4AED57CE284EE0DD003D8EAF /* Viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				4A417F9027E01A6500038ED8 /* ContentView.swift */,
+				4A510CB327E07F0D00D72846 /* HomeView.swift */,
+				4A510CB527E07F3800D72846 /* ManualAddView.swift */,
+				4A9C419527E2098700517873 /* Lunchpage.swift */,
+				4AE9966327E189EC007BCE14 /* AddPage.swift */,
+				4A510CB727E07F4C00D72846 /* PlannerView.swift */,
+				4A510CB927E07F7200D72846 /* FavouriteView.swift */,
+				4A510CBB27E07F8A00D72846 /* ProfileView.swift */,
+				4AFB678527E0210D00039787 /* Main.swift */,
+			);
+			path = Viewmodel;
+			sourceTree = "<group>";
+		};
+		4AED57CF284EE212003D8EAF /* Data or Objects */ = {
+			isa = PBXGroup;
+			children = (
+				4A9C418427E1FA6000517873 /* Favourites */,
+				4AADF9EF27E1B7A0000C7ACB /* Home Page */,
+				4AE9966027E18986007BCE14 /* ManualAdd */,
+				4AED57CD284EDF56003D8EAF /* New Group */,
+				4A1E46EF27E140C300CD2187 /* Settings */,
+				4A510CC327E0B12700D72846 /* Profile */,
+			);
+			path = "Data or Objects";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
