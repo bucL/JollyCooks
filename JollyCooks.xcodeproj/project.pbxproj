@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A1665632866E83A008C44A5 /* TodoCreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1665622866E83A008C44A5 /* TodoCreateView.swift */; };
 		4A1E46EE27E13E5B00CD2187 /* SettingsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1E46ED27E13E5B00CD2187 /* SettingsPage.swift */; };
 		4A1E46F127E140D000CD2187 /* SettingsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1E46F027E140D000CD2187 /* SettingsListView.swift */; };
 		4A417F8F27E01A6500038ED8 /* JollyCooksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A417F8E27E01A6500038ED8 /* JollyCooksApp.swift */; };
@@ -24,6 +25,8 @@
 		4A510CC027E0992E00D72846 /* ProfileBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A510CBF27E0992E00D72846 /* ProfileBox.swift */; };
 		4A510CC227E0ACDD00D72846 /* ProfileFood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A510CC127E0ACDD00D72846 /* ProfileFood.swift */; };
 		4A510CC627E0B36700D72846 /* ProfileBoxWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A510CC527E0B36700D72846 /* ProfileBoxWords.swift */; };
+		4A5B0B892866DE2A0023481E /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5B0B882866DE2A0023481E /* ListView.swift */; };
+		4A5B0B8C2866E29E0023481E /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5B0B8B2866E29E0023481E /* ListRowView.swift */; };
 		4A9C418027E1E32D00517873 /* Other Random Accounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C417F27E1E32D00517873 /* Other Random Accounts.swift */; };
 		4A9C418627E1FA6800517873 /* Pizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C418527E1FA6800517873 /* Pizza.swift */; };
 		4A9C418827E1FAF200517873 /* Noodle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C418727E1FAF200517873 /* Noodle.swift */; };
@@ -64,6 +67,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A1665622866E83A008C44A5 /* TodoCreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCreateView.swift; sourceTree = "<group>"; };
 		4A1E46ED27E13E5B00CD2187 /* SettingsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPage.swift; sourceTree = "<group>"; };
 		4A1E46F027E140D000CD2187 /* SettingsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsListView.swift; sourceTree = "<group>"; };
 		4A417F8B27E01A6500038ED8 /* JollyCooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JollyCooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +91,8 @@
 		4A510CBF27E0992E00D72846 /* ProfileBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileBox.swift; sourceTree = "<group>"; };
 		4A510CC127E0ACDD00D72846 /* ProfileFood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFood.swift; sourceTree = "<group>"; };
 		4A510CC527E0B36700D72846 /* ProfileBoxWords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileBoxWords.swift; sourceTree = "<group>"; };
+		4A5B0B882866DE2A0023481E /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		4A5B0B8B2866E29E0023481E /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
 		4A9C417F27E1E32D00517873 /* Other Random Accounts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Other Random Accounts.swift"; sourceTree = "<group>"; };
 		4A9C418527E1FA6800517873 /* Pizza.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pizza.swift; sourceTree = "<group>"; };
 		4A9C418727E1FAF200517873 /* Noodle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Noodle.swift; sourceTree = "<group>"; };
@@ -169,6 +175,7 @@
 			children = (
 				4A417F8E27E01A6500038ED8 /* JollyCooksApp.swift */,
 				4AED57CE284EE0DD003D8EAF /* Viewmodel */,
+				4A5B0B872866DDEF0023481E /* Views */,
 				4AED57CF284EE212003D8EAF /* Data or Objects */,
 				4A417F9227E01A6600038ED8 /* Assets.xcassets */,
 				4A417F9727E01A6600038ED8 /* Info.plist */,
@@ -222,6 +229,24 @@
 			children = (
 			);
 			path = "New Group";
+			sourceTree = "<group>";
+		};
+		4A5B0B872866DDEF0023481E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4A5B0B8A2866E27F0023481E /* ToDoList */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4A5B0B8A2866E27F0023481E /* ToDoList */ = {
+			isa = PBXGroup;
+			children = (
+				4A5B0B882866DE2A0023481E /* ListView.swift */,
+				4A5B0B8B2866E29E0023481E /* ListRowView.swift */,
+				4A1665622866E83A008C44A5 /* TodoCreateView.swift */,
+			);
+			path = ToDoList;
 			sourceTree = "<group>";
 		};
 		4A9C418427E1FA6000517873 /* Favourites */ = {
@@ -432,6 +457,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A1665632866E83A008C44A5 /* TodoCreateView.swift in Sources */,
 				4A510CC227E0ACDD00D72846 /* ProfileFood.swift in Sources */,
 				4A9C419627E2098700517873 /* Lunchpage.swift in Sources */,
 				4A9C418027E1E32D00517873 /* Other Random Accounts.swift in Sources */,
@@ -452,7 +478,9 @@
 				4AADF9F227E1B7B3000C7ACB /* Dinner.swift in Sources */,
 				4A9C418C27E1FC4D00517873 /* Mark1.swift in Sources */,
 				4A510CB627E07F3800D72846 /* ManualAddView.swift in Sources */,
+				4A5B0B892866DE2A0023481E /* ListView.swift in Sources */,
 				4A9C419227E2054F00517873 /* Onions.swift in Sources */,
+				4A5B0B8C2866E29E0023481E /* ListRowView.swift in Sources */,
 				4A9C419827E20EA500517873 /* Bun.swift in Sources */,
 				4AADF9F427E1C141000C7ACB /* Salads.swift in Sources */,
 				4A510CBE27E0925F00D72846 /* CircleImage.swift in Sources */,
