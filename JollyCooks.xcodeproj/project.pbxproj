@@ -40,6 +40,7 @@
 		4A9C419827E20EA500517873 /* Bun.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C419727E20EA500517873 /* Bun.swift */; };
 		4AADF9F227E1B7B3000C7ACB /* Dinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AADF9F127E1B7B3000C7ACB /* Dinner.swift */; };
 		4AADF9F427E1C141000C7ACB /* Salads.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AADF9F327E1C141000C7ACB /* Salads.swift */; };
+		4AB90404286827FE004B4B71 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB90403286827FE004B4B71 /* ItemModel.swift */; };
 		4AE9965F27E15916007BCE14 /* DessertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE9965E27E15916007BCE14 /* DessertView.swift */; };
 		4AE9966227E189A6007BCE14 /* AddMintBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE9966127E189A6007BCE14 /* AddMintBox.swift */; };
 		4AE9966427E189EC007BCE14 /* AddPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE9966327E189EC007BCE14 /* AddPage.swift */; };
@@ -106,6 +107,7 @@
 		4A9C419727E20EA500517873 /* Bun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bun.swift; sourceTree = "<group>"; };
 		4AADF9F127E1B7B3000C7ACB /* Dinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dinner.swift; sourceTree = "<group>"; };
 		4AADF9F327E1C141000C7ACB /* Salads.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Salads.swift; sourceTree = "<group>"; };
+		4AB90403286827FE004B4B71 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 		4AE9965E27E15916007BCE14 /* DessertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertView.swift; sourceTree = "<group>"; };
 		4AE9966127E189A6007BCE14 /* AddMintBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMintBox.swift; sourceTree = "<group>"; };
 		4AE9966327E189EC007BCE14 /* AddPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPage.swift; sourceTree = "<group>"; };
@@ -281,6 +283,14 @@
 			path = "New Group";
 			sourceTree = "<group>";
 		};
+		4AB90402286827F1004B4B71 /* ToDo */ = {
+			isa = PBXGroup;
+			children = (
+				4AB90403286827FE004B4B71 /* ItemModel.swift */,
+			);
+			path = ToDo;
+			sourceTree = "<group>";
+		};
 		4AE9966027E18986007BCE14 /* ManualAdd */ = {
 			isa = PBXGroup;
 			children = (
@@ -318,6 +328,7 @@
 		4AED57CF284EE212003D8EAF /* Data or Objects */ = {
 			isa = PBXGroup;
 			children = (
+				4AB90402286827F1004B4B71 /* ToDo */,
 				4A9C418427E1FA6000517873 /* Favourites */,
 				4AADF9EF27E1B7A0000C7ACB /* Home Page */,
 				4AE9966027E18986007BCE14 /* ManualAdd */,
@@ -484,6 +495,7 @@
 				4A9C419827E20EA500517873 /* Bun.swift in Sources */,
 				4AADF9F427E1C141000C7ACB /* Salads.swift in Sources */,
 				4A510CBE27E0925F00D72846 /* CircleImage.swift in Sources */,
+				4AB90404286827FE004B4B71 /* ItemModel.swift in Sources */,
 				4AFB678627E0210D00039787 /* Main.swift in Sources */,
 				4AE9966427E189EC007BCE14 /* AddPage.swift in Sources */,
 				4A510CBA27E07F7200D72846 /* FavouriteView.swift in Sources */,
