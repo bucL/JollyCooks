@@ -15,9 +15,15 @@ import SwiftUI
 
 @main
 struct JollyCooksApp: App {
+    
+    @StateObject var listViewModel: ListViewModel = ListViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            Main()
+            NavigationView{
+                ListView()
+            }
+            .environmentObject(listViewModel)
         }
     }
 }

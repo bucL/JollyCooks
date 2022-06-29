@@ -9,27 +9,43 @@ import SwiftUI
 
 struct ListView: View {
     
-    @State var items: [ItemModel] = [ItemModel(title: "First Task", isCompleted: false),ItemModel(title: "Second Task", isCompleted: true)]
+    @EnvironmentObject var listViewModel: ListViewModel
 
-    //items is an array of "ItemModel".
     
     var body: some View {
-        NavigationView{
             List{
-                ForEach(items) {item in
+                ForEach(listViewModel.items) {item in
                     ListRowView(item: item)
+                        .onTapGesture {
+                            withAnimation(.linear) {
+                                listViewModel.updateItem(item: item)
+                            }
+                        }
                 } //Loops item array
+                .onDelete(perform: listViewModel.deleteItem)
+                .onMove(perform: listViewModel.moveItem)
             }
             .navigationTitle("ToDo List")//Title of navigationview the List is inside of
                 .navigationBarItems(leading: EditButton(), trailing: NavigationLink("Add", destination:
                                TodoCreateView()       ))//Navigation at the top
-        }.navigationViewStyle(StackNavigationViewStyle())
-    }
-}
+        
+    }//End of Body
+    
+}//End of Struct
+
+
+
+
 
 struct ListView_Previews: PreviewProvider {
     static var previews: some View {
-        ListView()
+        NavigationView{
+            ListView()
+        }
+        .environmentObject(ListViewModel())
+        .navigationViewStyle(StackNavigationViewStyle())
+
     }
+        
 }
 
