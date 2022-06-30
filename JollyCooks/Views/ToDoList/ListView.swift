@@ -25,6 +25,7 @@ struct ListView: View {
                 .onDelete(perform: listViewModel.deleteItem)
                 .onMove(perform: listViewModel.moveItem)
             }
+            .navigationViewStyle(StackNavigationViewStyle())
             .navigationTitle("ToDo List")//Title of navigationview the List is inside of
                 .navigationBarItems(leading: EditButton(), trailing: NavigationLink("Add", destination:
                                TodoCreateView()       ))//Navigation at the top

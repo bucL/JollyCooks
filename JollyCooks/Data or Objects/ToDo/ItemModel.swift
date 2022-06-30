@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct ItemModel: Identifiable {
+struct ItemModel: Identifiable, Codable {
     let id: String
     let title: String //Title of Todo item
     let isCompleted: Bool //Is the Todo Item completed?
