@@ -13,18 +13,25 @@ struct ListView: View {
 
     
     var body: some View {
-            List{
-                ForEach(listViewModel.items) {item in
-                    ListRowView(item: item)
-                        .onTapGesture {
-                            withAnimation(.linear) {
-                                listViewModel.updateItem(item: item)
+        VStack{
+            if listViewModel.items.isEmpty{
+                Text("No Items")
+            } else{
+                List{
+                    ForEach(listViewModel.items) {item in
+                        ListRowView(item: item)
+                            .onTapGesture {
+                                withAnimation(.linear) {
+                                    listViewModel.updateItem(item: item)
+                                }
                             }
-                        }
-                } //Loops item array
-                .onDelete(perform: listViewModel.deleteItem)
-                .onMove(perform: listViewModel.moveItem)
+                    } //Loops item array
+                    .onDelete(perform: listViewModel.deleteItem)
+                    .onMove(perform: listViewModel.moveItem)
+                }
+
             }
+        }
             .navigationTitle("ToDo List")//Title of navigationview the List is inside of
                 .navigationBarItems(leading: EditButton(), trailing: NavigationLink("Add", destination:
                                TodoCreateView()       ))//Navigation at the top
