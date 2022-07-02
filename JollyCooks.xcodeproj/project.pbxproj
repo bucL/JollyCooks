@@ -16,6 +16,7 @@
 		4A417FAC27E01A6600038ED8 /* JollyCooksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A417FAB27E01A6600038ED8 /* JollyCooksUITests.swift */; };
 		4A5B0B892866DE2A0023481E /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5B0B882866DE2A0023481E /* ListView.swift */; };
 		4A5B0B8C2866E29E0023481E /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5B0B8B2866E29E0023481E /* ListRowView.swift */; };
+		4A629EDA2870438600FB489E /* NoItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A629ED92870438600FB489E /* NoItemsView.swift */; };
 		4AB90404286827FE004B4B71 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB90403286827FE004B4B71 /* ItemModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		4A417FAD27E01A6600038ED8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A5B0B882866DE2A0023481E /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		4A5B0B8B2866E29E0023481E /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
+		4A629ED92870438600FB489E /* NoItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoItemsView.swift; sourceTree = "<group>"; };
 		4AB90403286827FE004B4B71 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -154,6 +156,7 @@
 				4A5B0B882866DE2A0023481E /* ListView.swift */,
 				4A5B0B8B2866E29E0023481E /* ListRowView.swift */,
 				4A1665622866E83A008C44A5 /* TodoCreateView.swift */,
+				4A629ED92870438600FB489E /* NoItemsView.swift */,
 			);
 			path = ToDoList;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 				4A417F8F27E01A6500038ED8 /* JollyCooksApp.swift in Sources */,
 				4A5B0B892866DE2A0023481E /* ListView.swift in Sources */,
 				4A5B0B8C2866E29E0023481E /* ListRowView.swift in Sources */,
+				4A629EDA2870438600FB489E /* NoItemsView.swift in Sources */,
 				4AB90404286827FE004B4B71 /* ItemModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

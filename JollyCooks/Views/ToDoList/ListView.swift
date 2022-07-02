@@ -15,7 +15,7 @@ struct ListView: View {
     var body: some View {
         VStack{
             if listViewModel.items.isEmpty{
-                Text("No Items")
+                NoItemsView()
             } else{
                 List{
                     ForEach(listViewModel.items) {item in
