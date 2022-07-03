@@ -34,8 +34,13 @@ struct ListView: View {
             }
         }
             .navigationTitle("ToDo List")//Title of navigationview the List is inside of
-                .navigationBarItems(leading: EditButton(), trailing: NavigationLink("Add", destination:
-                               TodoCreateView()       ))//Navigation at the top
+                .navigationBarItems(leading: EditButton(), trailing: NavigationLink(destination: TodoCreateView())
+                                    {Text("New Task \(Image(systemName: "plus.diamond"))") })
+        
+        
+        
+        
+        //Navigation at the top
         
     }//End of Body
     

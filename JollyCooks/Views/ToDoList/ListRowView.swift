@@ -20,6 +20,8 @@ struct ListRowView: View {
             //Text will display title of item from ItemModel
             Spacer()
         }
+        .listRowBackground(Color.init("Orange"))
+        .background(Color.init("Orange"))
         .font(.title2)
         .padding(.vertical, 8)
     }
