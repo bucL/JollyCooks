@@ -21,7 +21,7 @@ struct JollyCooksApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView{
-                ListView()
+                SwiftUIView()
             }
             .navigationViewStyle(StackNavigationViewStyle())
             .environmentObject(listViewModel)

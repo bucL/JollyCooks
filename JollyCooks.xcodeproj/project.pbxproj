@@ -19,6 +19,8 @@
 		4A629EDA2870438600FB489E /* NoItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A629ED92870438600FB489E /* NoItemsView.swift */; };
 		4A926BE528711C650029D37B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A926BE428711C650029D37B /* LaunchScreen.storyboard */; };
 		4AB90404286827FE004B4B71 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB90403286827FE004B4B71 /* ItemModel.swift */; };
+		4ACF4BB62872517E0074406B /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACF4BB52872517E0074406B /* TabBar.swift */; };
+		4ACF4BBA28725E190074406B /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACF4BB928725E190074406B /* SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		4A629ED92870438600FB489E /* NoItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoItemsView.swift; sourceTree = "<group>"; };
 		4A926BE428711C650029D37B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4AB90403286827FE004B4B71 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		4ACF4BB52872517E0074406B /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		4ACF4BB928725E190074406B /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,7 @@
 				4A5B0B872866DDEF0023481E /* Views */,
 				4AED57CF284EE212003D8EAF /* Data or Objects */,
 				4A417F9227E01A6600038ED8 /* Assets.xcassets */,
+				4A926BE428711C650029D37B /* LaunchScreen.storyboard */,
 				4A417F9727E01A6600038ED8 /* Info.plist */,
 				4A417F9427E01A6600038ED8 /* Preview Content */,
 			);
@@ -147,8 +152,10 @@
 		4A5B0B872866DDEF0023481E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4ACF4BB4287251400074406B /* Manual Add */,
 				4A5B0B8A2866E27F0023481E /* ToDoList */,
-				4A926BE428711C650029D37B /* LaunchScreen.storyboard */,
+				4ACF4BB52872517E0074406B /* TabBar.swift */,
+				4ACF4BB928725E190074406B /* SwiftUIView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -170,6 +177,13 @@
 				4AB90403286827FE004B4B71 /* ItemModel.swift */,
 			);
 			path = ToDo;
+			sourceTree = "<group>";
+		};
+		4ACF4BB4287251400074406B /* Manual Add */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Manual Add";
 			sourceTree = "<group>";
 		};
 		4AED57CE284EE0DD003D8EAF /* Viewmodel */ = {
@@ -320,7 +334,9 @@
 			files = (
 				4A1665632866E83A008C44A5 /* TodoCreateView.swift in Sources */,
 				4A18AA1C286BCE8B00798D54 /* ListViewModel.swift in Sources */,
+				4ACF4BBA28725E190074406B /* SwiftUIView.swift in Sources */,
 				4A417F8F27E01A6500038ED8 /* JollyCooksApp.swift in Sources */,
+				4ACF4BB62872517E0074406B /* TabBar.swift in Sources */,
 				4A5B0B892866DE2A0023481E /* ListView.swift in Sources */,
 				4A5B0B8C2866E29E0023481E /* ListRowView.swift in Sources */,
 				4A629EDA2870438600FB489E /* NoItemsView.swift in Sources */,

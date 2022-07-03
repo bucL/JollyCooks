@@ -54,7 +54,7 @@
     <resources>
         <image name="Logo-1" width="512" height="512"/>
         <namedColor name="AccentColor">
-            <color red="0.95686274770000002" green="0.71764707569999997" blue="0.3803921938" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.9570000171661377" green="0.71799999475479126" blue="0.37999999523162842" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
     </resources>
 </document>
