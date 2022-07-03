@@ -17,6 +17,7 @@
 		4A5B0B892866DE2A0023481E /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5B0B882866DE2A0023481E /* ListView.swift */; };
 		4A5B0B8C2866E29E0023481E /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5B0B8B2866E29E0023481E /* ListRowView.swift */; };
 		4A629EDA2870438600FB489E /* NoItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A629ED92870438600FB489E /* NoItemsView.swift */; };
+		4A926BE528711C650029D37B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A926BE428711C650029D37B /* LaunchScreen.storyboard */; };
 		4AB90404286827FE004B4B71 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB90403286827FE004B4B71 /* ItemModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		4A5B0B882866DE2A0023481E /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		4A5B0B8B2866E29E0023481E /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
 		4A629ED92870438600FB489E /* NoItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoItemsView.swift; sourceTree = "<group>"; };
+		4A926BE428711C650029D37B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4AB90403286827FE004B4B71 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				4A5B0B8A2866E27F0023481E /* ToDoList */,
+				4A926BE428711C650029D37B /* LaunchScreen.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A926BE528711C650029D37B /* LaunchScreen.storyboard in Resources */,
 				4A417F9627E01A6600038ED8 /* Preview Assets.xcassets in Resources */,
 				4A417F9327E01A6600038ED8 /* Assets.xcassets in Resources */,
 			);
