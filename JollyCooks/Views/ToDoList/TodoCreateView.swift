@@ -25,7 +25,7 @@ struct TodoCreateView: View {
                     TextField("Type something here...", text: $textFieldText)
                         .frame(height: 55)
                         .padding(.horizontal)
-                        .background(Color.gray)
+                        .background(Color(UIColor.secondarySystemBackground))
                     .cornerRadius(10)
                     
                     Button(action: saveButtonPressed, label: {Text("Create".uppercased()).foregroundColor(.white)
@@ -73,10 +73,21 @@ struct TodoCreateView: View {
 
 struct TodoCreateView_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationView{
-            TodoCreateView()
-        }.environmentObject(ListViewModel())
-            .navigationViewStyle(StackNavigationViewStyle())
-          
+        Group {
+            
+            NavigationView{
+                TodoCreateView()
+            }.environmentObject(ListViewModel())
+                .navigationViewStyle(StackNavigationViewStyle())
+                .preferredColorScheme(.dark)
+              
+            //dark mode preview
+            
+            NavigationView{
+                TodoCreateView()
+            }.environmentObject(ListViewModel())
+                .navigationViewStyle(StackNavigationViewStyle())
+              //Light mode preview
+        }
     }
 }

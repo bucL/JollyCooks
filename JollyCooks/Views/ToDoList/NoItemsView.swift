@@ -20,10 +20,10 @@ struct NoItemsView: View {
                 Text("You currently have no items.")
                     .font(.title)
                     .fontWeight(.semibold)
-                Text("Hmm... maybe try clicking that mysterious looking plus button!")
+                Text("Hmm... maybe try clicking that mysterious looking create button!")
                     .padding(.bottom, 20)
                 NavigationLink(destination: TodoCreateView(), label:{
-                    Text("ADd")
+                    Text("Create")
                         .foregroundColor(Color.white)
                         .font(.headline)
                         .frame(height: 55)
@@ -41,6 +41,7 @@ struct NoItemsView: View {
                 .offset(y: animate ? -5 : 0)
                 
             }
+            .frame(maxWidth: 600)
             .multilineTextAlignment(.center)
             .padding(40)
             .onAppear(perform: addAnimation)

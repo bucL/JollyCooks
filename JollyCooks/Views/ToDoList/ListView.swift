@@ -16,6 +16,7 @@ struct ListView: View {
         VStack{
             if listViewModel.items.isEmpty{
                 NoItemsView()
+                    .transition(AnyTransition.opacity.animation(.easeIn))
             } else{
                 List{
                     ForEach(listViewModel.items) {item in
@@ -46,11 +47,26 @@ struct ListView: View {
 
 struct ListView_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationView{
-            ListView()
+        
+        Group {
+            
+            NavigationView{
+                ListView()
+            }
+            .environmentObject(ListViewModel())
+            .navigationViewStyle(StackNavigationViewStyle())
+            .preferredColorScheme(.dark)
+            
+            
+            NavigationView{
+                ListView()
+            }
+            .environmentObject(ListViewModel())
+            .navigationViewStyle(StackNavigationViewStyle())
         }
-        .environmentObject(ListViewModel())
-        .navigationViewStyle(StackNavigationViewStyle())
+        
+        
+        
     }
         
 }
