@@ -17,8 +17,8 @@ import Firebase
 @main
 struct JollyCooksApp: App {
     
-    @StateObject var listViewModel: ListViewModel = ListViewModel()
     
+    // Firebase Initialisation.
     init() {
         FirebaseApp.configure()
     }

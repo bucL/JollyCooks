@@ -28,6 +28,8 @@
 		68457EDA287C6E6C007AC9E2 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 68457ED9287C6E6C007AC9E2 /* FirebaseFirestore */; };
 		68457EDC287C6E6C007AC9E2 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 68457EDB287C6E6C007AC9E2 /* FirebaseFirestoreSwift-Beta */; };
 		68457EDE287C6E6C007AC9E2 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 68457EDD287C6E6C007AC9E2 /* FirebaseStorage */; };
+		68B3484028812E62005267D9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 68B3483F28812E62005267D9 /* GoogleService-Info.plist */; };
+		68B3484228813C30005267D9 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B3484128813C30005267D9 /* SignUp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		4ACF4BB928725E190074406B /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		68457ED02879D8A1007AC9E2 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		68457ED2287C6C51007AC9E2 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		68B3483F28812E62005267D9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		68B3484128813C30005267D9 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +129,7 @@
 		4A417F8D27E01A6500038ED8 /* JollyCooks */ = {
 			isa = PBXGroup;
 			children = (
+				68B3483F28812E62005267D9 /* GoogleService-Info.plist */,
 				4A417F8E27E01A6500038ED8 /* JollyCooksApp.swift */,
 				4AED57CE284EE0DD003D8EAF /* Viewmodel */,
 				4A5B0B872866DDEF0023481E /* Views */,
@@ -170,6 +175,7 @@
 				4ACF4BB52872517E0074406B /* TabBar.swift */,
 				4ACF4BB928725E190074406B /* SwiftUIView.swift */,
 				68457ED02879D8A1007AC9E2 /* AuthView.swift */,
+				68B3484128813C30005267D9 /* SignUp.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -324,6 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A926BE528711C650029D37B /* LaunchScreen.storyboard in Resources */,
+				68B3484028812E62005267D9 /* GoogleService-Info.plist in Resources */,
 				4A417F9627E01A6600038ED8 /* Preview Assets.xcassets in Resources */,
 				4A417F9327E01A6600038ED8 /* Assets.xcassets in Resources */,
 			);
@@ -351,6 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A1665632866E83A008C44A5 /* TodoCreateView.swift in Sources */,
+				68B3484228813C30005267D9 /* SignUp.swift in Sources */,
 				4A18AA1C286BCE8B00798D54 /* ListViewModel.swift in Sources */,
 				4ACF4BBA28725E190074406B /* SwiftUIView.swift in Sources */,
 				4A417F8F27E01A6500038ED8 /* JollyCooksApp.swift in Sources */,
@@ -447,7 +455,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -502,7 +510,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -522,7 +530,7 @@
 				DEVELOPMENT_TEAM = FRKVY4JJ8R;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = JollyCooks/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -544,7 +552,7 @@
 				DEVELOPMENT_TEAM = FRKVY4JJ8R;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = JollyCooks/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
