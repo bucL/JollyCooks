@@ -5,26 +5,33 @@
 //  Created by Phillip Shen on 15/3/22.
 //
 /* Mvvm Notes
-    Model - Data
-    View - UI
-    ViewModel - manages Models for View (Like puts/connects them together).
-*/
+ Model - Data
+ View - UI
+ ViewModel - manages Models for View (Like puts/connects them together).
+ */
 
 
 import SwiftUI
+import Firebase
 
 @main
 struct JollyCooksApp: App {
     
     @StateObject var listViewModel: ListViewModel = ListViewModel()
     
+    init() {
+        FirebaseApp.configure()
+    }
+    
+    
     var body: some Scene {
         WindowGroup {
-            NavigationView{
-                SwiftUIView()
-            }
-            .navigationViewStyle(StackNavigationViewStyle())
-            .environmentObject(listViewModel)
+            AuthView()
+            //NavigationView{
+            //  SwiftUIView()
+            //}
+            //.navigationViewStyle(StackNavigationViewStyle())
+            //.environmentObject(listViewModel)
         }
     }
 }
