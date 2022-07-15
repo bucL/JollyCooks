@@ -14,7 +14,6 @@ import FirebaseAuth
 
 class AuthViewModel: ObservableObject {
     
-    
     @Published var email = ""
     @Published var password = ""
     @Published var loginSuccess = false
@@ -43,10 +42,7 @@ class AuthViewModel: ObservableObject {
     }
     
     func signUp() {
-        if newPassword != verifyPassword {
-            self.failedRegisterMessage = "Please ensure the passwords match"
-            self.failedRegister = true
-        }
+        Auth.auth().createUser(withEmail: newEmail, password: newPassword)
     }
     
 }
