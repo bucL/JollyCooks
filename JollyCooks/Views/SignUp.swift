@@ -6,11 +6,31 @@
 //
 
 import SwiftUI
+import Firebase
+import FirebaseCore
+import FirebaseAuth
+import FirebaseFirestore
+
 
 struct SignUp: View {
+    
+    @StateObject var viewModel = AuthViewModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        VStack {
+            
+            TextField("First Name", text: $viewModel.firstName)
+                .foregroundColor(Color.white)
+                .frame(width: 450, height: 50)
+            
+            
+            
+            
+        }
+        .background(.orange)
     }
+    
 }
 
 struct SignUp_Previews: PreviewProvider {

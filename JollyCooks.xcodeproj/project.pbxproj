@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,15 +21,13 @@
 		4AB90404286827FE004B4B71 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB90403286827FE004B4B71 /* ItemModel.swift */; };
 		4ACF4BB62872517E0074406B /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACF4BB52872517E0074406B /* TabBar.swift */; };
 		4ACF4BBA28725E190074406B /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACF4BB928725E190074406B /* SwiftUIView.swift */; };
+		625EC88F041E7B19728A6B0C /* Pods_JollyCooksTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D159A49AD4913778FCE1D5F /* Pods_JollyCooksTests.framework */; };
 		68457ED12879D8A1007AC9E2 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68457ED02879D8A1007AC9E2 /* AuthView.swift */; };
 		68457ED3287C6C51007AC9E2 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68457ED2287C6C51007AC9E2 /* AuthViewModel.swift */; };
-		68457ED6287C6E6C007AC9E2 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 68457ED5287C6E6C007AC9E2 /* FirebaseAuth */; };
-		68457ED8287C6E6C007AC9E2 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 68457ED7287C6E6C007AC9E2 /* FirebaseDatabase */; };
-		68457EDA287C6E6C007AC9E2 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 68457ED9287C6E6C007AC9E2 /* FirebaseFirestore */; };
-		68457EDC287C6E6C007AC9E2 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 68457EDB287C6E6C007AC9E2 /* FirebaseFirestoreSwift-Beta */; };
-		68457EDE287C6E6C007AC9E2 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 68457EDD287C6E6C007AC9E2 /* FirebaseStorage */; };
 		68B3484028812E62005267D9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 68B3483F28812E62005267D9 /* GoogleService-Info.plist */; };
 		68B3484228813C30005267D9 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B3484128813C30005267D9 /* SignUp.swift */; };
+		99B00EE538392E02D5CDA49D /* Pods_JollyCooks_JollyCooksUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B58C5882964A7AF5F2D5BCAA /* Pods_JollyCooks_JollyCooksUITests.framework */; };
+		A38A20BBF675306C76DAC8D1 /* Pods_JollyCooks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F1E71ACB3A63B07B983607A /* Pods_JollyCooks.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +48,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F1E71ACB3A63B07B983607A /* Pods_JollyCooks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JollyCooks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A093570280E1EEC1260B6CC /* Pods-JollyCooksTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JollyCooksTests.debug.xcconfig"; path = "Target Support Files/Pods-JollyCooksTests/Pods-JollyCooksTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1D159A49AD4913778FCE1D5F /* Pods_JollyCooksTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JollyCooksTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A1665622866E83A008C44A5 /* TodoCreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCreateView.swift; sourceTree = "<group>"; };
 		4A18AA1B286BCE8B00798D54 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		4A417F8B27E01A6500038ED8 /* JollyCooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JollyCooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +75,12 @@
 		68457ED2287C6C51007AC9E2 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		68B3483F28812E62005267D9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		68B3484128813C30005267D9 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		7FB7C4BEC86C5F4B2AC4892B /* Pods-JollyCooksTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JollyCooksTests.release.xcconfig"; path = "Target Support Files/Pods-JollyCooksTests/Pods-JollyCooksTests.release.xcconfig"; sourceTree = "<group>"; };
+		9B805206FF0C1BC3A0546202 /* Pods-JollyCooks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JollyCooks.debug.xcconfig"; path = "Target Support Files/Pods-JollyCooks/Pods-JollyCooks.debug.xcconfig"; sourceTree = "<group>"; };
+		AFCFE9E4E5319E2AA0660B28 /* Pods-JollyCooks-JollyCooksUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JollyCooks-JollyCooksUITests.debug.xcconfig"; path = "Target Support Files/Pods-JollyCooks-JollyCooksUITests/Pods-JollyCooks-JollyCooksUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B58C5882964A7AF5F2D5BCAA /* Pods_JollyCooks_JollyCooksUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JollyCooks_JollyCooksUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D828BC119713A300AF72A1BE /* Pods-JollyCooks-JollyCooksUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JollyCooks-JollyCooksUITests.release.xcconfig"; path = "Target Support Files/Pods-JollyCooks-JollyCooksUITests/Pods-JollyCooks-JollyCooksUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E93052721BBCBDEAAEAC7C63 /* Pods-JollyCooks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JollyCooks.release.xcconfig"; path = "Target Support Files/Pods-JollyCooks/Pods-JollyCooks.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68457ED8287C6E6C007AC9E2 /* FirebaseDatabase in Frameworks */,
-				68457EDC287C6E6C007AC9E2 /* FirebaseFirestoreSwift-Beta in Frameworks */,
-				68457ED6287C6E6C007AC9E2 /* FirebaseAuth in Frameworks */,
-				68457EDE287C6E6C007AC9E2 /* FirebaseStorage in Frameworks */,
-				68457EDA287C6E6C007AC9E2 /* FirebaseFirestore in Frameworks */,
+				A38A20BBF675306C76DAC8D1 /* Pods_JollyCooks.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				625EC88F041E7B19728A6B0C /* Pods_JollyCooksTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99B00EE538392E02D5CDA49D /* Pods_JollyCooks_JollyCooksUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +118,8 @@
 				4A417F9F27E01A6600038ED8 /* JollyCooksTests */,
 				4A417FAA27E01A6600038ED8 /* JollyCooksUITests */,
 				4A417F8C27E01A6500038ED8 /* Products */,
+				B1FAFFAD43BCB3F83E14B3E7 /* Pods */,
+				719101D4129130943D318A59 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -216,6 +223,30 @@
 			path = "Data or Objects";
 			sourceTree = "<group>";
 		};
+		719101D4129130943D318A59 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F1E71ACB3A63B07B983607A /* Pods_JollyCooks.framework */,
+				B58C5882964A7AF5F2D5BCAA /* Pods_JollyCooks_JollyCooksUITests.framework */,
+				1D159A49AD4913778FCE1D5F /* Pods_JollyCooksTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B1FAFFAD43BCB3F83E14B3E7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9B805206FF0C1BC3A0546202 /* Pods-JollyCooks.debug.xcconfig */,
+				E93052721BBCBDEAAEAC7C63 /* Pods-JollyCooks.release.xcconfig */,
+				AFCFE9E4E5319E2AA0660B28 /* Pods-JollyCooks-JollyCooksUITests.debug.xcconfig */,
+				D828BC119713A300AF72A1BE /* Pods-JollyCooks-JollyCooksUITests.release.xcconfig */,
+				1A093570280E1EEC1260B6CC /* Pods-JollyCooksTests.debug.xcconfig */,
+				7FB7C4BEC86C5F4B2AC4892B /* Pods-JollyCooksTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -223,22 +254,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A417FB027E01A6600038ED8 /* Build configuration list for PBXNativeTarget "JollyCooks" */;
 			buildPhases = (
+				D114EB2C0A1CA8E6CC40B3F3 /* [CP] Check Pods Manifest.lock */,
 				4A417F8727E01A6500038ED8 /* Sources */,
 				4A417F8827E01A6500038ED8 /* Frameworks */,
 				4A417F8927E01A6500038ED8 /* Resources */,
+				54B841C8A16DC685E42A36E8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = JollyCooks;
-			packageProductDependencies = (
-				68457ED5287C6E6C007AC9E2 /* FirebaseAuth */,
-				68457ED7287C6E6C007AC9E2 /* FirebaseDatabase */,
-				68457ED9287C6E6C007AC9E2 /* FirebaseFirestore */,
-				68457EDB287C6E6C007AC9E2 /* FirebaseFirestoreSwift-Beta */,
-				68457EDD287C6E6C007AC9E2 /* FirebaseStorage */,
-			);
 			productName = JollyCooks;
 			productReference = 4A417F8B27E01A6500038ED8 /* JollyCooks.app */;
 			productType = "com.apple.product-type.application";
@@ -247,6 +273,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A417FB327E01A6600038ED8 /* Build configuration list for PBXNativeTarget "JollyCooksTests" */;
 			buildPhases = (
+				A0135F49A935BABB515F7D38 /* [CP] Check Pods Manifest.lock */,
 				4A417F9827E01A6600038ED8 /* Sources */,
 				4A417F9927E01A6600038ED8 /* Frameworks */,
 				4A417F9A27E01A6600038ED8 /* Resources */,
@@ -265,9 +292,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A417FB627E01A6600038ED8 /* Build configuration list for PBXNativeTarget "JollyCooksUITests" */;
 			buildPhases = (
+				3023545597CC8513C8C0E245 /* [CP] Check Pods Manifest.lock */,
 				4A417FA327E01A6600038ED8 /* Sources */,
 				4A417FA427E01A6600038ED8 /* Frameworks */,
 				4A417FA527E01A6600038ED8 /* Resources */,
+				327255EFC8AEBB313930ACEF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -310,9 +339,6 @@
 				Base,
 			);
 			mainGroup = 4A417F8227E01A6500038ED8;
-			packageReferences = (
-				68457ED4287C6E6C007AC9E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-			);
 			productRefGroup = 4A417F8C27E01A6500038ED8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -351,6 +377,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3023545597CC8513C8C0E245 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JollyCooks-JollyCooksUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		327255EFC8AEBB313930ACEF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JollyCooks-JollyCooksUITests/Pods-JollyCooks-JollyCooksUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JollyCooks-JollyCooksUITests/Pods-JollyCooks-JollyCooksUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JollyCooks-JollyCooksUITests/Pods-JollyCooks-JollyCooksUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54B841C8A16DC685E42A36E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JollyCooks/Pods-JollyCooks-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JollyCooks/Pods-JollyCooks-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JollyCooks/Pods-JollyCooks-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0135F49A935BABB515F7D38 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JollyCooksTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D114EB2C0A1CA8E6CC40B3F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JollyCooks-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4A417F8727E01A6500038ED8 /* Sources */ = {
@@ -522,6 +651,7 @@
 		};
 		4A417FB127E01A6600038ED8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B805206FF0C1BC3A0546202 /* Pods-JollyCooks.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -544,6 +674,7 @@
 		};
 		4A417FB227E01A6600038ED8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E93052721BBCBDEAAEAC7C63 /* Pods-JollyCooks.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -566,6 +697,7 @@
 		};
 		4A417FB427E01A6600038ED8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A093570280E1EEC1260B6CC /* Pods-JollyCooksTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -588,6 +720,7 @@
 		};
 		4A417FB527E01A6600038ED8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FB7C4BEC86C5F4B2AC4892B /* Pods-JollyCooksTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -610,6 +743,7 @@
 		};
 		4A417FB727E01A6600038ED8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFCFE9E4E5319E2AA0660B28 /* Pods-JollyCooks-JollyCooksUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -630,6 +764,7 @@
 		};
 		4A417FB827E01A6600038ED8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D828BC119713A300AF72A1BE /* Pods-JollyCooks-JollyCooksUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -688,45 +823,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		68457ED4287C6E6C007AC9E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 8.10.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		68457ED5287C6E6C007AC9E2 /* FirebaseAuth */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 68457ED4287C6E6C007AC9E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAuth;
-		};
-		68457ED7287C6E6C007AC9E2 /* FirebaseDatabase */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 68457ED4287C6E6C007AC9E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseDatabase;
-		};
-		68457ED9287C6E6C007AC9E2 /* FirebaseFirestore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 68457ED4287C6E6C007AC9E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFirestore;
-		};
-		68457EDB287C6E6C007AC9E2 /* FirebaseFirestoreSwift-Beta */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 68457ED4287C6E6C007AC9E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = "FirebaseFirestoreSwift-Beta";
-		};
-		68457EDD287C6E6C007AC9E2 /* FirebaseStorage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 68457ED4287C6E6C007AC9E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseStorage;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4A417F8327E01A6500038ED8 /* Project object */;
 }
