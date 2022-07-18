@@ -13,34 +13,40 @@ struct ListView: View {
 
     
     var body: some View {
-        VStack{
-            if listViewModel.items.isEmpty{
-                NoItemsView()
-                    .transition(AnyTransition.opacity.animation(.easeIn))
-            } else{
-                List{
-                    ForEach(listViewModel.items) {item in
-                        ListRowView(item: item)
-                            .onTapGesture {
-                                withAnimation(.linear) {
-                                    listViewModel.updateItem(item: item)
+        NavigationView{
+            VStack{
+                if listViewModel.items.isEmpty{
+                    NoItemsView()
+                        .transition(AnyTransition.opacity.animation(.easeIn))
+                } else{
+                    List{
+                        ForEach(listViewModel.items) {item in
+                            ListRowView(item: item)
+                                .onTapGesture {
+                                    withAnimation(.linear) {
+                                        listViewModel.updateItem(item: item)
+                                    }
                                 }
-                            }
-                    } //Loops item array
-                    .onDelete(perform: listViewModel.deleteItem)
-                    .onMove(perform: listViewModel.moveItem)
-                }
+                        } //Loops item array
+                        .onDelete(perform: listViewModel.deleteItem)
+                        .onMove(perform: listViewModel.moveItem)
+                    }
 
+                }
             }
-        }
             .navigationTitle("ToDo List")//Title of navigationview the List is inside of
-                .navigationBarItems(leading: EditButton(), trailing: NavigationLink(destination: TodoCreateView())
-                                    {Text("New Task \(Image(systemName: "plus.diamond"))") })
+            .navigationBarItems(leading: EditButton(), trailing: NavigationLink(destination: TodoCreateView())
+                    {Text("New Task \(Image(systemName: "plus.diamond"))") })
+            
+            
+            
+            //Navigation at the top
+            
+        }
+        .navigationViewStyle(StackNavigationViewStyle())
         
-        
-        
-        
-        //Navigation at the top
+       
+
         
     }//End of Body
     
@@ -55,19 +61,18 @@ struct ListView_Previews: PreviewProvider {
         
         Group {
             
-            NavigationView{
+
                 ListView()
-            }
+            
             .environmentObject(ListViewModel())
-            .navigationViewStyle(StackNavigationViewStyle())
+            
             .preferredColorScheme(.dark)
             
             
-            NavigationView{
+           
                 ListView()
-            }
+            
             .environmentObject(ListViewModel())
-            .navigationViewStyle(StackNavigationViewStyle())
         }
         
         

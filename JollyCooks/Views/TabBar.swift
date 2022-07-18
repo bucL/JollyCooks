@@ -13,9 +13,30 @@ struct TabBar: View {
             
             //Other views here and add a .tabitem underneath them
             
+            
+            Text("Home")
+                .tabItem {
+                    Label("Home", systemImage: "house")
+                }
+            
+            Color.red
+                .tabItem {
+                    Label("Add", systemImage: "plus")
+                }
+            
             ListView()
                 .tabItem {
                     Label("ToDo", systemImage: "house")
+                }
+            
+            Color.red
+                .tabItem {
+                    Label("Profile", systemImage: "person")
+                }
+            
+            Color.red
+                .tabItem {
+                    Label("Settings", systemImage: "gear")
                 }
             
         }
@@ -24,9 +45,9 @@ struct TabBar: View {
 
 struct TabBar_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationView{
+
             TabBar()
-        }.environmentObject(ListViewModel())
+        .environmentObject(ListViewModel())
         }
 
 }
