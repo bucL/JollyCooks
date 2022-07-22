@@ -14,7 +14,7 @@ struct TabBar: View {
             //Other views here and add a .tabitem underneath them
             
             
-            Text("Home")
+            HomeView()
                 .tabItem {
                     Label("Home", systemImage: "house")
                 }
@@ -45,9 +45,10 @@ struct TabBar: View {
 
 struct TabBar_Previews: PreviewProvider {
     static var previews: some View {
-
+        
             TabBar()
-        .environmentObject(ListViewModel())
-        }
+                .environmentObject(ListViewModel())
+        
+    }
 
 }
