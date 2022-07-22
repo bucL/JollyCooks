@@ -48,6 +48,7 @@ struct AuthView: View {
                         
                         Button {
                             viewModel.login()
+                            //Calling the login function from the AuthViewModel
                         } label: {
                             Text("Login")
                                 .frame(width: 100, height: 50)
