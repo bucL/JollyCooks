@@ -34,7 +34,7 @@ struct TabBar: View {
                     Label("Profile", systemImage: "person")
                 }
             
-            Color.red
+            SettingsView()
                 .tabItem {
                     Label("Settings", systemImage: "gear")
                 }
