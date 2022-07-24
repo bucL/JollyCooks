@@ -11,20 +11,21 @@ struct SettingsView: View {
     
     @Environment(\.colorScheme) var colorScheme
     
+    
     var body: some View {
         NavigationView{
             List {
-                Section(header: Text("Main")) {
-                    Text("Account Settings")
-                        .foregroundColor(Color.white)
-                        .listRowBackground(Color.orange)
-//                    Button(action: testing, label: Text(""))
+                Section(header: Text("Account Settings")) {
+                    Text("\(Image(systemName:"person.crop.circle.fill.badge.minus")) Deactivate")
                     
+//                        .listRowBackground(Color.orange)
+//                    Button(action: testing, label: Text(""))
+                    Text("\(Image(systemName: "power")) Deactivate")
                 }
+                
+                
                 Section(header: Text("About Us")) {
                     Text("About JollyCooks")
-                        .foregroundColor(Color.white)
-                        .listRowBackground(Color.orange)
                 }
                 
                 Section(header: Text("Meet the team")){
@@ -56,15 +57,16 @@ struct SettingsView: View {
                         PersonFour()
                     }//sorry joe the image I had, had only three male avatar and I wasn't bothered to find a new palatte of avatars  so I just gave you a female avatar.
                 }
-              
-                
             }// ENd of List
             .listStyle(.insetGrouped)
             .navigationTitle("Settings")
+                
+         
             
         } //Navigation view end
         .navigationViewStyle(StackNavigationViewStyle())
     }
+        
 }
 
 struct SettingsView_Previews: PreviewProvider {

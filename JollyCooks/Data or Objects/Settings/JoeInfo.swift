@@ -23,15 +23,18 @@ struct JoeInfo: View {
                 .shadow(radius: 7)
                 .padding()
             Text("Hey there I'm Phillip!" + "\n" + "You may call me just Phil, I am the founder of JollyCooks. However that definitely doesn't mean I created it all by myself, make sure to check the other three memembers as they probably played are bigger role than me!")
-                .foregroundColor(.white)
                 .frame(maxWidth: .infinity, alignment: .topLeading)
                 .padding()
-                .background(Color.orange)
+                .background(Color.white.opacity(0.8))
                 .cornerRadius(10)
                 .padding()
             
             Spacer()
         }
+        .background(Image("orangegradient")
+            .resizable()
+            .ignoresSafeArea()
+            .frame(maxWidth: .infinity))
         
         
         
