@@ -62,7 +62,7 @@ struct SettingsView: View {
                     PhillipInfo()
                     
                 } label: {
-                    Text("Contact Us")
+                    Text("\(Image(systemName: "headphones")) Contact Us")
                     .foregroundColor(Color.red)
                 }
                 
