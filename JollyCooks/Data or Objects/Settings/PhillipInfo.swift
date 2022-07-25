@@ -23,7 +23,7 @@ struct PhillipInfo: View {
                 }
                 .shadow(radius: 7)
                 .padding()
-            Text("Hey there I'm Phillip!" + "\n" + "You can just call me just Phil, I am the founder of JollyCooks. However that definitely doesn't mean I created it all by myself, make sure to check the other three memembers as they probably played are bigger role than me!")
+            Text("Hey there I'm Phillip!" + "\n" + "You can just call me just Phil, I am the founder of JollyCooks and am responsible for the To-Do feature and UI design of the app. However that definitely doesn't mean I created it all by myself, make sure to check the other three memembers as they probably played a bigger role than me!")
                 .foregroundColor(Color.white)
                 .frame(maxWidth: .infinity, alignment: .topLeading)
                 .padding()
