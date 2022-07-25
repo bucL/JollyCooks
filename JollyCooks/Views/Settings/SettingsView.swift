@@ -3,7 +3,7 @@
 //  JollyCooks
 //
 //  Created by Phillip Shen on 22/7/2022.
-//
+//  This is the settings page, doesn't have a lot of feature apart from logging out(?) and just displaying information about JollCooks.
 
 import SwiftUI
 
@@ -16,7 +16,7 @@ struct SettingsView: View {
         NavigationView{
             List {
                 Section(header: Text("Account Settings")) {
-                    Text("\(Image(systemName:"person.crop.circle.fill.badge.minus")) Deactivate")
+                    Text("\(Image(systemName:"person.crop.circle.fill.badge.minus")) Log Out")
                     
 //                        .listRowBackground(Color.orange)
 //                    Button(action: testing, label: Text(""))
@@ -25,7 +25,7 @@ struct SettingsView: View {
                 
                 
                 Section(header: Text("About Us")) {
-                    Text("About JollyCooks")
+                    Text("\(Image(systemName: "questionmark.circle")) About JollyCooks")
                 }
                 
                 Section(header: Text("Meet the team")){
@@ -57,6 +57,15 @@ struct SettingsView: View {
                         PersonFour()
                     }//sorry joe the image I had, had only three male avatar and I wasn't bothered to find a new palatte of avatars  so I just gave you a female avatar.
                 }
+                
+                NavigationLink {
+                    PhillipInfo()
+                    
+                } label: {
+                    Text("Contact Us")
+                    .foregroundColor(Color.red)
+                }
+                
             }// ENd of List
             .listStyle(.insetGrouped)
             .navigationTitle("Settings")
