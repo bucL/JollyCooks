@@ -3,14 +3,14 @@
 //  JollyCooks
 //
 //  Created by Phillip Shen on 25/6/2022.
-//  This is the ListView, gathers and displays the todo list and items created.
+//  This is the ListView, all the other views ListRowView, TodoCreateView and NoItemsView are displayed through this view.
 
 import SwiftUI
 
 struct ListView: View {
     
     @EnvironmentObject var listViewModel: ListViewModel
-
+    //EnvironmentObject because the data is shared between multiple views.
     
     var body: some View {
         NavigationView{
@@ -18,6 +18,7 @@ struct ListView: View {
                 if listViewModel.items.isEmpty{
                     NoItemsView()
                         .transition(AnyTransition.opacity.animation(.easeIn))
+                        //If the user has not items created then display the NoItemView. Transition just adds some animation
                 } else{
                     List{
                         ForEach(listViewModel.items) {item in
@@ -27,9 +28,10 @@ struct ListView: View {
                                         listViewModel.updateItem(item: item)
                                     }
                                 }
-                        } //Loops item array
+                        } //For each item in item array it will be displayed and have to option to be updated when tapped.
                         .onDelete(perform: listViewModel.deleteItem)
                         .onMove(perform: listViewModel.moveItem)
+                        //Delete and move func which are created in ListViewModel file in viewmodel folder
                     }
 
                 }
@@ -67,12 +69,12 @@ struct ListView_Previews: PreviewProvider {
             .environmentObject(ListViewModel())
             
             .preferredColorScheme(.dark)
-            
+            //View device in dark mode. Using this to test compatability with dark mode users.
             
            
                 ListView()
-            
             .environmentObject(ListViewModel())
+            
         }
         
         
