@@ -30,6 +30,8 @@ class AuthViewModel: ObservableObject {
     @Published var failedRegister = false
     @Published var failedRegisterMessage = ""
     
+    @Published var logoutMessage = ""
+    
     func login() {
         Auth.auth().signIn(withEmail: self.email, password: self.password) { result, error in
             if error != nil {
@@ -42,7 +44,28 @@ class AuthViewModel: ObservableObject {
     }
     
     func signUp() {
-        Auth.auth().createUser(withEmail: newEmail, password: newPassword)
+        Auth.auth().createUser(withEmail: newEmail, password: newPassword) { result, error in
+            if error != nil {
+                self.failedRegisterMessage = error!.localizedDescription
+                self.failedRegister = true
+            } else {
+                self.accountSuccess = true
+            }
+        }
+    }
+    
+    // Altered logout function from https://stackoverflow.com/questions/37943616/firebase-sign-out-not-working-in-swift
+    
+    func logOut() {
+        
+        do {
+            try Auth.auth().signOut()
+            self.logoutMessage = "Logged Out Successfully!"
+            
+        } catch {
+            self.logoutMessage = "Failed to log out"
+        }
+        
     }
     
 }

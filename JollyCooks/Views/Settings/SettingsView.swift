@@ -16,7 +16,12 @@ struct SettingsView: View {
         NavigationView{
             List {
                 Section(header: Text("Account Settings")) {
-                    Text("\(Image(systemName:"person.crop.circle.fill.badge.minus")) Log Out")
+                    Button {
+                        AuthViewModel().logOut()
+                    } label: {
+                        Text("\(Image(systemName:"person.crop.circle.fill.badge.minus")) Log Out")
+                    }
+                    
                     
 //                        .listRowBackground(Color.orange)
 //                    Button(action: testing, label: Text(""))

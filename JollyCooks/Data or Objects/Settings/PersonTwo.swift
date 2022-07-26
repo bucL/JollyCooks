@@ -22,7 +22,7 @@ struct PersonTwo: View {
 
                 }
                 .shadow(radius: 2)
-            Text("Aaditiya Shankar")
+            Text("Aaditya Shankar")
             
             Spacer()
         }
