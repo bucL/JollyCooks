@@ -3,44 +3,52 @@
 //  JollyCooks
 //
 //  Created by Phillip Shen on 25/6/2022.
-//  This is the ListView, gathers and displays the todo list and items created.
+//  This is the ListView, all the other views ListRowView, TodoCreateView and NoItemsView are displayed through this view.
 
 import SwiftUI
 
 struct ListView: View {
     
     @EnvironmentObject var listViewModel: ListViewModel
-
+    //EnvironmentObject because the data is shared between multiple views.
     
     var body: some View {
-        VStack{
-            if listViewModel.items.isEmpty{
-                NoItemsView()
-                    .transition(AnyTransition.opacity.animation(.easeIn))
-            } else{
-                List{
-                    ForEach(listViewModel.items) {item in
-                        ListRowView(item: item)
-                            .onTapGesture {
-                                withAnimation(.linear) {
-                                    listViewModel.updateItem(item: item)
+        NavigationView{
+            VStack{
+                if listViewModel.items.isEmpty{
+                    NoItemsView()
+                        .transition(AnyTransition.opacity.animation(.easeIn))
+                        //If the user has not items created then display the NoItemView. Transition just adds some animation
+                } else{
+                    List{
+                        ForEach(listViewModel.items) {item in
+                            ListRowView(item: item)
+                                .onTapGesture {
+                                    withAnimation(.linear) {
+                                        listViewModel.updateItem(item: item)
+                                    }
                                 }
-                            }
-                    } //Loops item array
-                    .onDelete(perform: listViewModel.deleteItem)
-                    .onMove(perform: listViewModel.moveItem)
-                }
+                        } //For each item in item array it will be displayed and have to option to be updated when tapped.
+                        .onDelete(perform: listViewModel.deleteItem)
+                        .onMove(perform: listViewModel.moveItem)
+                        //Delete and move func which are created in ListViewModel file in viewmodel folder
+                    }
 
+                }
             }
-        }
             .navigationTitle("ToDo List")//Title of navigationview the List is inside of
-                .navigationBarItems(leading: EditButton(), trailing: NavigationLink(destination: TodoCreateView())
-                                    {Text("New Task \(Image(systemName: "plus.diamond"))") })
+            .navigationBarItems(leading: EditButton(), trailing: NavigationLink(destination: TodoCreateView())
+                    {Text("New Task \(Image(systemName: "plus.diamond"))") })
+            
+            
+            
+            //Navigation at the top
+            
+        }
+        .navigationViewStyle(StackNavigationViewStyle())
         
-        
-        
-        
-        //Navigation at the top
+       
+
         
     }//End of Body
     
@@ -55,19 +63,18 @@ struct ListView_Previews: PreviewProvider {
         
         Group {
             
-            NavigationView{
+
                 ListView()
-            }
+            
             .environmentObject(ListViewModel())
-            .navigationViewStyle(StackNavigationViewStyle())
+            
             .preferredColorScheme(.dark)
+            //View device in dark mode. Using this to test compatability with dark mode users.
             
-            
-            NavigationView{
+           
                 ListView()
-            }
             .environmentObject(ListViewModel())
-            .navigationViewStyle(StackNavigationViewStyle())
+            
         }
         
         

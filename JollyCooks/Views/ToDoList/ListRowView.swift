@@ -32,7 +32,7 @@ struct ListRowView_Previews: PreviewProvider {
     
     static var item1 = ItemModel(title: "First Item!", isCompleted: false)
     static var item2 = ItemModel(title: "Hi", isCompleted: true)
-    //Create two versions of item
+    //Create two versions of item for preview
     
     static var previews: some View {
         Group {

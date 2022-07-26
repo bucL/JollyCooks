@@ -74,10 +74,8 @@ struct AuthView: View {
             
             
         } else {
-            NavigationView{
+
                 SwiftUIView()
-            }
-            .navigationViewStyle(StackNavigationViewStyle())
             .environmentObject(listViewModel)
         }
         
