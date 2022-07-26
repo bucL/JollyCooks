@@ -16,6 +16,7 @@
 		4A417F9627E01A6600038ED8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A417F9527E01A6600038ED8 /* Preview Assets.xcassets */; };
 		4A417FA127E01A6600038ED8 /* JollyCooksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A417FA027E01A6600038ED8 /* JollyCooksTests.swift */; };
 		4A417FAC27E01A6600038ED8 /* JollyCooksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A417FAB27E01A6600038ED8 /* JollyCooksUITests.swift */; };
+		4A4CB0DA288F85CE0095DBFE /* EmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4CB0D9288F85CE0095DBFE /* EmailView.swift */; };
 		4A5B0B892866DE2A0023481E /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5B0B882866DE2A0023481E /* ListView.swift */; };
 		4A5B0B8C2866E29E0023481E /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5B0B8B2866E29E0023481E /* ListRowView.swift */; };
 		4A629EDA2870438600FB489E /* NoItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A629ED92870438600FB489E /* NoItemsView.swift */; };
@@ -77,6 +78,7 @@
 		4A417FA727E01A6600038ED8 /* JollyCooksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JollyCooksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A417FAB27E01A6600038ED8 /* JollyCooksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JollyCooksUITests.swift; sourceTree = "<group>"; };
 		4A417FAD27E01A6600038ED8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A4CB0D9288F85CE0095DBFE /* EmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailView.swift; sourceTree = "<group>"; };
 		4A5B0B882866DE2A0023481E /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		4A5B0B8B2866E29E0023481E /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
 		4A629ED92870438600FB489E /* NoItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoItemsView.swift; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				4A896534288AC6DF009BE4B8 /* SettingsView.swift */,
+				4A4CB0D9288F85CE0095DBFE /* EmailView.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -559,10 +562,10 @@
 				4A896535288AC6DF009BE4B8 /* SettingsView.swift in Sources */,
 				4A5B0B892866DE2A0023481E /* ListView.swift in Sources */,
 				4A5B0B8C2866E29E0023481E /* ListRowView.swift in Sources */,
-				4A7A1B1C288B5FCB00116DE5 /* AaditiyaInfo.swift in Sources */,
 				14EA8210288F829D00C051A1 /* ProfileView.swift in Sources */,
 				4A7A1B20288B5FE200116DE5 /* JoeInfo.swift in Sources */,
 				4A7A1B1E288B5FD500116DE5 /* AndrewInfo.swift in Sources */,
+				4A4CB0DA288F85CE0095DBFE /* EmailView.swift in Sources */,
 				68457ED3287C6C51007AC9E2 /* AuthViewModel.swift in Sources */,
 				4A629EDA2870438600FB489E /* NoItemsView.swift in Sources */,
 				68457ED12879D8A1007AC9E2 /* AuthView.swift in Sources */,
