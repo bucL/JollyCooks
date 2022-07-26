@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14BF8DAA288CFDB60021769C /* (null) in Sources */ = {isa = PBXBuildFile; };
+		14EA8210288F829D00C051A1 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EA820F288F829D00C051A1 /* ProfileView.swift */; };
 		4A1665632866E83A008C44A5 /* TodoCreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1665622866E83A008C44A5 /* TodoCreateView.swift */; };
 		4A18AA1C286BCE8B00798D54 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A18AA1B286BCE8B00798D54 /* ListViewModel.swift */; };
 		4A417F8F27E01A6500038ED8 /* JollyCooksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A417F8E27E01A6500038ED8 /* JollyCooksApp.swift */; };
@@ -59,6 +61,7 @@
 
 /* Begin PBXFileReference section */
 		0F1E71ACB3A63B07B983607A /* Pods_JollyCooks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JollyCooks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		14EA820F288F829D00C051A1 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		1A093570280E1EEC1260B6CC /* Pods-JollyCooksTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JollyCooksTests.debug.xcconfig"; path = "Target Support Files/Pods-JollyCooksTests/Pods-JollyCooksTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1D159A49AD4913778FCE1D5F /* Pods_JollyCooksTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JollyCooksTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A1665622866E83A008C44A5 /* TodoCreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCreateView.swift; sourceTree = "<group>"; };
@@ -205,6 +208,7 @@
 				4ACF4BB928725E190074406B /* SwiftUIView.swift */,
 				68457ED02879D8A1007AC9E2 /* AuthView.swift */,
 				68B3484128813C30005267D9 /* SignUp.swift */,
+				14EA820F288F829D00C051A1 /* ProfileView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -555,12 +559,15 @@
 				4A896535288AC6DF009BE4B8 /* SettingsView.swift in Sources */,
 				4A5B0B892866DE2A0023481E /* ListView.swift in Sources */,
 				4A5B0B8C2866E29E0023481E /* ListRowView.swift in Sources */,
+				4A7A1B1C288B5FCB00116DE5 /* AaditiyaInfo.swift in Sources */,
+				14EA8210288F829D00C051A1 /* ProfileView.swift in Sources */,
 				4A7A1B20288B5FE200116DE5 /* JoeInfo.swift in Sources */,
 				4A7A1B1E288B5FD500116DE5 /* AndrewInfo.swift in Sources */,
 				68457ED3287C6C51007AC9E2 /* AuthViewModel.swift in Sources */,
 				4A629EDA2870438600FB489E /* NoItemsView.swift in Sources */,
 				68457ED12879D8A1007AC9E2 /* AuthView.swift in Sources */,
 				4AB90404286827FE004B4B71 /* ItemModel.swift in Sources */,
+				14BF8DAA288CFDB60021769C /* (null) in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
