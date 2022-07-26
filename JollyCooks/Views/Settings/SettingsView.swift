@@ -23,14 +23,15 @@ struct SettingsView: View {
                     }
                     Text("\(Image(systemName: "power")) Deactivate")
                 }
-                .listRowBackground(colorScheme == .dark ? Color.black.brightness(0.2) : Color.gray.brightness(0.43))
-                
+                .listRowBackground(Color("LightDarkColor"))
+
                 
                 
                 Section(header: Text("About Us")) {
                     Text("\(Image(systemName: "questionmark.circle")) About JollyCooks")
                 }
-                .listRowBackground(colorScheme == .dark ? Color.black.brightness(0.2) : Color.gray.brightness(0.43))
+                .listRowBackground(Color("LightDarkColor"))
+
                 
                 Section(header: Text("Meet the team")){
                     NavigationLink {
@@ -38,28 +39,32 @@ struct SettingsView: View {
                         
                     } label: {
                         PersonThree()
-                    }.listRowBackground(colorScheme == .dark ? Color.black.brightness(0.2) : Color.gray.brightness(0.43))
+                    }                .listRowBackground(Color("LightDarkColor"))
+
                  
                     NavigationLink {
                         AadityaInfo()
                         
                     } label: {
                         PersonTwo()
-                    }.listRowBackground(colorScheme == .dark ? Color.black.brightness(0.2) : Color.gray.brightness(0.43))
+                    }                .listRowBackground(Color("LightDarkColor"))
+
                     
                     NavigationLink {
                         AndrewInfo()
                         
                     } label: {
                        PersonOne()
-                    }.listRowBackground(colorScheme == .dark ? Color.black.brightness(0.2) : Color.gray.brightness(0.43))
+                    }                .listRowBackground(Color("LightDarkColor"))
+
                     
                     NavigationLink {
                         JoeInfo()
                         
                     } label: {
                         PersonFour()
-                    }.listRowBackground(colorScheme == .dark ? Color.black.brightness(0.2) : Color.gray.brightness(0.43))
+                    }                .listRowBackground(Color("LightDarkColor"))
+
                     
                     //sorry joe the image I had, had only three male avatar and I wasn't bothered to find a new palatte of avatars  so I just gave you a female avatar.
                 }
@@ -71,7 +76,7 @@ struct SettingsView: View {
                     Text("\(Image(systemName: "headphones")) Contact Us")
                     .foregroundColor(Color.red)
                 }
-                .listRowBackground(colorScheme == .dark ? Color.black.brightness(0.2) : Color.gray.brightness(0.43))
+                .listRowBackground(Color("LightDarkColor"))
                 
             }// ENd of List
             .onAppear {
