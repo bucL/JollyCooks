@@ -1,5 +1,5 @@
 //
-//  AaditiyaInfo.swift
+//  AadityaInfo.swift
 //  JollyCooks
 //
 //  Created by Phillip Shen on 23/7/2022.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AaditiyaInfo: View {
+struct AadityaInfo: View {
     var body: some View {
         VStack{
             Image("Person4")
@@ -41,6 +41,6 @@ struct AaditiyaInfo: View {
 
 struct AaditiyaInfo_Previews: PreviewProvider {
     static var previews: some View {
-        AaditiyaInfo()
+        AadityaInfo()
     }
 }

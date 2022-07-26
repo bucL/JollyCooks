@@ -37,7 +37,7 @@ struct SettingsView: View {
                     }
                  
                     NavigationLink {
-                        AaditiyaInfo()
+                        AadityaInfo()
                         
                     } label: {
                         PersonTwo()
