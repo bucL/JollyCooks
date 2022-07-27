@@ -37,7 +37,7 @@
 		68457ED12879D8A1007AC9E2 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68457ED02879D8A1007AC9E2 /* AuthView.swift */; };
 		68457ED3287C6C51007AC9E2 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68457ED2287C6C51007AC9E2 /* AuthViewModel.swift */; };
 		68B3484028812E62005267D9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 68B3483F28812E62005267D9 /* GoogleService-Info.plist */; };
-		68B3484228813C30005267D9 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B3484128813C30005267D9 /* SignUp.swift */; };
+		68B3484228813C30005267D9 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B3484128813C30005267D9 /* SignUpView.swift */; };
 		99B00EE538392E02D5CDA49D /* Pods_JollyCooks_JollyCooksUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B58C5882964A7AF5F2D5BCAA /* Pods_JollyCooks_JollyCooksUITests.framework */; };
 		A38A20BBF675306C76DAC8D1 /* Pods_JollyCooks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F1E71ACB3A63B07B983607A /* Pods_JollyCooks.framework */; };
 /* End PBXBuildFile section */
@@ -97,7 +97,7 @@
 		68457ED02879D8A1007AC9E2 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		68457ED2287C6C51007AC9E2 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		68B3483F28812E62005267D9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		68B3484128813C30005267D9 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		68B3484128813C30005267D9 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		7FB7C4BEC86C5F4B2AC4892B /* Pods-JollyCooksTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JollyCooksTests.release.xcconfig"; path = "Target Support Files/Pods-JollyCooksTests/Pods-JollyCooksTests.release.xcconfig"; sourceTree = "<group>"; };
 		9B805206FF0C1BC3A0546202 /* Pods-JollyCooks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JollyCooks.debug.xcconfig"; path = "Target Support Files/Pods-JollyCooks/Pods-JollyCooks.debug.xcconfig"; sourceTree = "<group>"; };
 		AFCFE9E4E5319E2AA0660B28 /* Pods-JollyCooks-JollyCooksUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JollyCooks-JollyCooksUITests.debug.xcconfig"; path = "Target Support Files/Pods-JollyCooks-JollyCooksUITests/Pods-JollyCooks-JollyCooksUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -207,7 +207,7 @@
 				4ACF4BB52872517E0074406B /* TabBar.swift */,
 				4ACF4BB928725E190074406B /* SwiftUIView.swift */,
 				68457ED02879D8A1007AC9E2 /* AuthView.swift */,
-				68B3484128813C30005267D9 /* SignUp.swift */,
+				68B3484128813C30005267D9 /* SignUpView.swift */,
 				14EA820F288F829D00C051A1 /* ProfileView.swift */,
 			);
 			path = Views;
@@ -544,7 +544,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A1665632866E83A008C44A5 /* TodoCreateView.swift in Sources */,
-				68B3484228813C30005267D9 /* SignUp.swift in Sources */,
+				68B3484228813C30005267D9 /* SignUpView.swift in Sources */,
 				4A896538288AD903009BE4B8 /* PersonThree.swift in Sources */,
 				4A89653A288ADAD2009BE4B8 /* PersonOne.swift in Sources */,
 				4A18AA1C286BCE8B00798D54 /* ListViewModel.swift in Sources */,
@@ -559,7 +559,6 @@
 				4A896535288AC6DF009BE4B8 /* SettingsView.swift in Sources */,
 				4A5B0B892866DE2A0023481E /* ListView.swift in Sources */,
 				4A5B0B8C2866E29E0023481E /* ListRowView.swift in Sources */,
-				4A7A1B1C288B5FCB00116DE5 /* AaditiyaInfo.swift in Sources */,
 				14EA8210288F829D00C051A1 /* ProfileView.swift in Sources */,
 				4A7A1B20288B5FE200116DE5 /* JoeInfo.swift in Sources */,
 				4A7A1B1E288B5FD500116DE5 /* AndrewInfo.swift in Sources */,

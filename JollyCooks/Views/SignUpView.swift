@@ -12,7 +12,7 @@ import FirebaseAuth
 import FirebaseFirestore
 
 
-struct SignUp: View {
+struct SignUpView: View {
     
     @StateObject var viewModel = AuthViewModel()
     
@@ -35,6 +35,6 @@ struct SignUp: View {
 
 struct SignUp_Previews: PreviewProvider {
     static var previews: some View {
-        SignUp()
+        SignUpView()
     }
 }

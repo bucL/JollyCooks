@@ -46,7 +46,7 @@ class AuthViewModel: ObservableObject {
     func signUp() {
         Auth.auth().createUser(withEmail: newEmail, password: newPassword) { result, error in
             if error != nil {
-                self.failedRegisterMessage = error!.localizedDescription
+                self.failedRegisterMessage = error!.localizedDescription // Updating Error Message to be displayed by alert in SignUpView.swift
                 self.failedRegister = true
             } else {
                 self.accountSuccess = true

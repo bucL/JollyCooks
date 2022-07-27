@@ -59,7 +59,7 @@ struct AuthView: View {
                             
                         }.alert("\(viewModel.failedLoginMessage)", isPresented:$viewModel.displayFailedLogin) { Button("OK", role: .cancel) {} }
                         
-                        NavigationLink(destination: SignUp()) {
+                        NavigationLink(destination: SignUpView()) {
                             Text("Sign Up")
                                 .frame(width: 100, height: 50)
                                 .foregroundColor(Color.white)
