@@ -28,11 +28,6 @@ struct JollyCooksApp: App {
     var body: some Scene {
         WindowGroup {
             AuthView()
-            //NavigationView{
-            //  SwiftUIView()
-            //}
-            //.navigationViewStyle(StackNavigationViewStyle())
-            //.environmentObject(listViewModel)
         }
     }
 }

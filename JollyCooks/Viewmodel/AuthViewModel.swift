@@ -57,11 +57,10 @@ class AuthViewModel: ObservableObject {
     // Altered logout function from https://stackoverflow.com/questions/37943616/firebase-sign-out-not-working-in-swift
     
     func logOut() {
-        
         do {
             try Auth.auth().signOut()
+            self.loginSuccess = false
             self.logoutMessage = "Logged Out Successfully!"
-            
         } catch {
             self.logoutMessage = "Failed to log out"
         }

@@ -10,7 +10,7 @@ import SwiftUI
 struct AuthView: View {
     
     
-    @StateObject private var viewModel = AuthViewModel()
+    @StateObject var viewModel = AuthViewModel() 
     @StateObject var listViewModel: ListViewModel = ListViewModel()
 
     
@@ -18,6 +18,7 @@ struct AuthView: View {
     var body: some View {
         
         if viewModel.loginSuccess == false {
+            
             NavigationView {
                 ZStack {
                     Image("background")
