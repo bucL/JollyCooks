@@ -21,11 +21,12 @@ struct PersonThree: View {
                         Circle().stroke(.white, lineWidth: 4)
 
                     }
+                
                     .shadow(radius: 2)
                 Text("Phillip Shen")
                 
                 Spacer()
-            }
+            }        
     }
 }
 
