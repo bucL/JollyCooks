@@ -7,8 +7,10 @@
 
 import SwiftUI
 
+
+
 struct ListRowView: View {
-    
+        
     let item: ItemModel
     
     var body: some View {
@@ -17,6 +19,7 @@ struct ListRowView: View {
                 .foregroundColor(item.isCompleted ? .green : .red)
             //Color and Icon will change depending on item completion status
             Text(item.title)
+                .foregroundColor(Color.white)
             //Text will display title of item from ItemModel
             Spacer()
         }
