@@ -3,7 +3,7 @@
 //  JollyCooks
 //
 //  Created by Phillip Shen on 25/6/2022.
-//  This is the Add Page, where the user goes to create new Todo list items. 
+//  This is the Add Page, where the user goes to create new Todo list items.
 
 import SwiftUI
 
@@ -52,7 +52,7 @@ struct TodoCreateView: View {
         if textFieldText.count < 1 {
             alertTitle = "ToDo Item must be atleast 1 character long"
             showAlert.toggle()
-            return false //Return false means user cannot create that item until word count is appropriate. 
+            return false //Return false means user cannot create that item until word count is appropriate.
         }
         if textFieldText.count > 30 {
             alertTitle = "ToDo Item must be under 30 words, else you've come to the wrong app "
@@ -91,3 +91,4 @@ struct TodoCreateView_Previews: PreviewProvider {
         }
     }
 }
+

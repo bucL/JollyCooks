@@ -73,3 +73,4 @@ struct NoItemsView_Previews: PreviewProvider {
         .navigationViewStyle(StackNavigationViewStyle())
     }
 }
+

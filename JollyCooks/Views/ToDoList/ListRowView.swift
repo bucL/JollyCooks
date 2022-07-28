@@ -3,14 +3,12 @@
 //  JollyCooks
 //
 //  Created by Phillip Shen on 25/6/2022.
-// ListRowView is what the basic blueprint of the todo list items will look like will be kept. 
+// ListRowView is what the basic blueprint of the todo list items will look like will be kept.
 
 import SwiftUI
 
-
-
 struct ListRowView: View {
-        
+    
     let item: ItemModel
     
     var body: some View {
@@ -19,7 +17,6 @@ struct ListRowView: View {
                 .foregroundColor(item.isCompleted ? .green : .red)
             //Color and Icon will change depending on item completion status
             Text(item.title)
-                .foregroundColor(Color.white)
             //Text will display title of item from ItemModel
             Spacer()
         }
@@ -45,3 +42,4 @@ struct ListRowView_Previews: PreviewProvider {
         .previewLayout(.sizeThatFits)
     }
 }
+
