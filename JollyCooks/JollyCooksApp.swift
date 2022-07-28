@@ -10,7 +10,7 @@
  ViewModel - manages Models for View (Like puts/connects them together).
  */
 
-
+// Importing necessary library/api's to allow proper functionality.
 import SwiftUI
 import Firebase
 

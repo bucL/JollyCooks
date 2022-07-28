@@ -10,8 +10,8 @@ import SwiftUI
 struct AuthView: View {
     
     
-    @StateObject var viewModel = AuthViewModel() 
-    @StateObject var listViewModel: ListViewModel = ListViewModel()
+    @StateObject var viewModel = AuthViewModel() // Referencing AuthViewModel to call functions from this file in the View.
+    @StateObject var listViewModel: ListViewModel = ListViewModel() // Referncing ListViewModel to set environment Object in the view. 
 
     
     

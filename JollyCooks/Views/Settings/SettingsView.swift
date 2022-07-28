@@ -13,77 +13,77 @@ struct SettingsView: View {
     @StateObject var viewModel = AuthViewModel() //Referencing AuthViewModel.swift
     
     var body: some View {
-            NavigationView{
-                List {
-                    Section(header: Text("Account Settings")) {
-                        Button {
-                            // Calling logOut function from AuthViewModel.swift
-                            viewModel.logOut()
-                        } label: {
-                            Text("\(Image(systemName:"person.crop.circle.fill.badge.minus")) Log Out")
-                        }
-                        .alert("\(viewModel.logoutMessage)", isPresented:$viewModel.displayLogoutMessage) { Button("OK", role: .cancel) {} }
-                        
-                        
-    //                        .listRowBackground(Color.orange)
-    //                    Button(action: testing, label: Text(""))
-                        Text("\(Image(systemName: "power")) Deactivate")
+        NavigationView{
+            List {
+                Section(header: Text("Account Settings")) {
+                    Button {
+                        // Calling logOut function from AuthViewModel.swift
+                        viewModel.logOut()
+                    } label: {
+                        Text("\(Image(systemName:"person.crop.circle.fill.badge.minus")) Log Out")
                     }
+                    .alert("\(viewModel.logoutMessage)", isPresented:$viewModel.displayLogoutMessage) { Button("OK", role: .cancel) {} } // Display alert when attmepting to logout. 
                     
                     
-                    Section(header: Text("About Us")) {
-                        Text("\(Image(systemName: "questionmark.circle")) About JollyCooks")
-                    }
-                    
-                    Section(header: Text("Meet the team")){
-                        NavigationLink {
-                            PhillipInfo()
-                            
-                        } label: {
-                            PersonThree()
-                        }
-                     
-                        NavigationLink {
-                            AadityaInfo()
-                            
-                        } label: {
-                            PersonTwo()
-                        }
-                        
-                        NavigationLink {
-                            AndrewInfo()
-                            
-                        } label: {
-                           PersonOne()
-                        }
-                        
-                        NavigationLink {
-                            JoeInfo()
-                            
-                        } label: {
-                            PersonFour()
-                        }//sorry joe the image I had, had only three male avatar and I wasn't bothered to find a new palatte of avatars  so I just gave you a female avatar.
-                    }
-                    
+                    //.listRowBackground(Color.orange)
+                    // Button(action: testing, label: Text(""))
+                    Text("\(Image(systemName: "power")) Deactivate")
+                }
+                
+                
+                Section(header: Text("About Us")) {
+                    Text("\(Image(systemName: "questionmark.circle")) About JollyCooks")
+                }
+                
+                Section(header: Text("Meet the team")){
                     NavigationLink {
                         PhillipInfo()
                         
                     } label: {
-                        Text("\(Image(systemName: "headphones")) Contact Us")
-                        .foregroundColor(Color.red)
+                        PersonThree()
                     }
                     
-                }// ENd of List
-                .listStyle(.insetGrouped)
-                .navigationTitle("Settings")
+                    NavigationLink {
+                        AadityaInfo()
+                        
+                    } label: {
+                        PersonTwo()
+                    }
                     
-             
+                    NavigationLink {
+                        AndrewInfo()
+                        
+                    } label: {
+                        PersonOne()
+                    }
+                    
+                    NavigationLink {
+                        JoeInfo()
+                        
+                    } label: {
+                        PersonFour()
+                    }//sorry joe the image I had, had only three male avatar and I wasn't bothered to find a new palatte of avatars  so I just gave you a female avatar.
+                }
                 
-            } //Navigation view end
-            .navigationViewStyle(StackNavigationViewStyle())
-
-    }
+                NavigationLink {
+                    PhillipInfo()
+                    
+                } label: {
+                    Text("\(Image(systemName: "headphones")) Contact Us")
+                        .foregroundColor(Color.red)
+                }
+                
+            }// ENd of List
+            .listStyle(.insetGrouped)
+            .navigationTitle("Settings")
+            
+            
+            
+        } //Navigation view end
+        .navigationViewStyle(StackNavigationViewStyle())
         
+    }
+    
 }
 
 struct SettingsView_Previews: PreviewProvider {
