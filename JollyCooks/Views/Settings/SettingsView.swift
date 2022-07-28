@@ -13,7 +13,6 @@ struct SettingsView: View {
     @StateObject var viewModel = AuthViewModel() //Referencing AuthViewModel.swift
     
     var body: some View {
-        if viewModel.loginSuccess == true {
             NavigationView{
                 List {
                     Section(header: Text("Account Settings")) {
@@ -23,6 +22,7 @@ struct SettingsView: View {
                         } label: {
                             Text("\(Image(systemName:"person.crop.circle.fill.badge.minus")) Log Out")
                         }
+                        .alert("\(viewModel.logoutMessage)", isPresented:$viewModel.displayLogoutMessage) { Button("OK", role: .cancel) {} }
                         
                         
     //                        .listRowBackground(Color.orange)
@@ -82,9 +82,6 @@ struct SettingsView: View {
             } //Navigation view end
             .navigationViewStyle(StackNavigationViewStyle())
 
-        } else {
-            
-        }
     }
         
 }

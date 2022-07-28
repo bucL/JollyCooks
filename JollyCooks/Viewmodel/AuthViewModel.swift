@@ -31,6 +31,7 @@ class AuthViewModel: ObservableObject {
     @Published var failedRegisterMessage = ""
     
     @Published var logoutMessage = ""
+    @Published var displayLogoutMessage = false
     
     func login() {
         Auth.auth().signIn(withEmail: self.email, password: self.password) { result, error in
@@ -61,8 +62,10 @@ class AuthViewModel: ObservableObject {
             try Auth.auth().signOut()
             self.loginSuccess = false
             self.logoutMessage = "Logged Out Successfully!"
+            self.displayLogoutMessage = true
         } catch {
             self.logoutMessage = "Failed to log out"
+            self.displayLogoutMessage = true
         }
         
     }
