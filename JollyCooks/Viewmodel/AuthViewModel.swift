@@ -20,7 +20,7 @@ class AuthViewModel: ObservableObject {
      ==========================================
      */
     
-    @Published var email = ""
+    @Published var email = "test@gmail.com"
     @Published var password = ""
     @Published var loginSuccess = false
     @Published var displayFailedLogin = false

@@ -22,12 +22,14 @@ let db = Firestore.firestore()
 
 class FirestoreViewModel: ObservableObject {
     
+    var viewModelAuth = AuthViewModel()
+    
     @Published var firstName = ""
     
     // Setting reference for users database.
-    let docRef = db.collection("users").document("test@gmail.com")
     
     func test() {
+        let docRef = db.collection("users").document(viewModelAuth.email)
         // Sequence from https://stackoverflow.com/questions/48312485/how-to-access-a-specific-field-from-cloud-firestore-firebase-in-swift
         // Allowing for retrieval of specific document from firestore database collection.
         docRef.getDocument { (document, error) in
