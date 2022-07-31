@@ -21,7 +21,9 @@ struct SignUpView: View {
         
         VStack {
             
-            Button {} label: {
+            Button {
+                viewModelDB.test()
+            } label: {
                 Text("Check if Data Retrieved")
                     .padding()
                 

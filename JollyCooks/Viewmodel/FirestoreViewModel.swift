@@ -23,9 +23,19 @@ let db = Firestore.firestore()
 class FirestoreViewModel: ObservableObject {
     
     // Setting reference for users database.
-    let docRef = db.collection("users")
+    let docRef = db.collection("users").document("test@gmail.com")
     
     func test() {
+        // Sequence from https://stackoverflow.com/questions/48312485/how-to-access-a-specific-field-from-cloud-firestore-firebase-in-swift
+        // Allowing for retrieval of specific document from firestore database collection.
+        docRef.getDocument { (document, error) in
+            if let document = document, document.exists {
+                let property = document.get("firstname")
+                print("Document data: \(property ?? "nil")")
+            } else {
+                print("Document does not exist")
+            }
+        }
         
     }
     
