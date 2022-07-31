@@ -28,6 +28,15 @@ struct JollyCooksApp: App {
     var body: some Scene {
         WindowGroup {
             AuthView()
+                .onAppear() {
+                    //For getting Device model (I need this for emailing support feature
+                    //What each prints is stated by the name e.g the first one prints the system version of the Device
+                    print(UIDevice.current.systemVersion)
+                    print(UIDevice.current.modelName)
+                    print(Bundle.main.displayName)
+                    print(Bundle.main.appVersion)
+                    print(Bundle.main.appBuild)
+                }
         }
     }
 }

@@ -11,6 +11,8 @@ struct SettingsView: View {
     
     @Environment(\.colorScheme) var colorScheme
     @StateObject var viewModel = AuthViewModel() //Referencing AuthViewModel.swift
+    @Environment(\.openURL) var openURL
+    private var email = SupportEmail(toAddress: "sddgroupc@gmail.com", subject: "Support Ticket", messageHeader: "Please describe issue below")
     
     var body: some View {
         NavigationView{
@@ -75,9 +77,8 @@ struct SettingsView: View {
                     //sorry joe the image I had, had only three male avatar and I wasn't bothered to find a new palatte of avatars  so I just gave you a female avatar.
                 }
                 
-                NavigationLink {
-                    EmailView()
-                    
+                Button {
+                    email.send(openURL: openURL)
                 } label: {
                     Text("\(Image(systemName: "headphones")) Contact Us")
                         .foregroundColor(Color.red)
@@ -99,6 +100,8 @@ struct SettingsView: View {
         
       
     }
+    
+    
     
         
     }

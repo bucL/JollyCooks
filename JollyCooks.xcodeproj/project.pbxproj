@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		14BF8DAA288CFDB60021769C /* (null) in Sources */ = {isa = PBXBuildFile; };
 		14EA8210288F829D00C051A1 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EA820F288F829D00C051A1 /* ProfileView.swift */; };
+		4A03BB4028962DB900E84E73 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A03BB3F28962DB900E84E73 /* UIDevice+Extension.swift */; };
+		4A03BB4228962F0000E84E73 /* DeviceModels.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A03BB4128962F0000E84E73 /* DeviceModels.json */; };
+		4A03BB48289633A000E84E73 /* SupportEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A03BB47289633A000E84E73 /* SupportEmail.swift */; };
+		4A03BB4A289633BA00E84E73 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A03BB49289633BA00E84E73 /* Bundle+Extension.swift */; };
 		4A1665632866E83A008C44A5 /* TodoCreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1665622866E83A008C44A5 /* TodoCreateView.swift */; };
 		4A18AA1C286BCE8B00798D54 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A18AA1B286BCE8B00798D54 /* ListViewModel.swift */; };
 		4A417F8F27E01A6500038ED8 /* JollyCooksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A417F8E27E01A6500038ED8 /* JollyCooksApp.swift */; };
@@ -65,6 +69,10 @@
 		14EA820F288F829D00C051A1 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		1A093570280E1EEC1260B6CC /* Pods-JollyCooksTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JollyCooksTests.debug.xcconfig"; path = "Target Support Files/Pods-JollyCooksTests/Pods-JollyCooksTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1D159A49AD4913778FCE1D5F /* Pods_JollyCooksTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JollyCooksTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A03BB3F28962DB900E84E73 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
+		4A03BB4128962F0000E84E73 /* DeviceModels.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DeviceModels.json; sourceTree = "<group>"; };
+		4A03BB47289633A000E84E73 /* SupportEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportEmail.swift; sourceTree = "<group>"; };
+		4A03BB49289633BA00E84E73 /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 		4A1665622866E83A008C44A5 /* TodoCreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCreateView.swift; sourceTree = "<group>"; };
 		4A18AA1B286BCE8B00798D54 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		4A417F8B27E01A6500038ED8 /* JollyCooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JollyCooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,6 +144,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A03BB3E28962D8600E84E73 /* Email */ = {
+			isa = PBXGroup;
+			children = (
+				4A03BB47289633A000E84E73 /* SupportEmail.swift */,
+				4A03BB4128962F0000E84E73 /* DeviceModels.json */,
+				4A03BB3F28962DB900E84E73 /* UIDevice+Extension.swift */,
+				4A03BB49289633BA00E84E73 /* Bundle+Extension.swift */,
+			);
+			path = Email;
+			sourceTree = "<group>";
+		};
 		4A417F8227E01A6500038ED8 = {
 			isa = PBXGroup;
 			children = (
@@ -278,6 +297,7 @@
 		4AED57CF284EE212003D8EAF /* Data or Objects */ = {
 			isa = PBXGroup;
 			children = (
+				4A03BB3E28962D8600E84E73 /* Email */,
 				4A896536288AD8A3009BE4B8 /* Settings */,
 				4AB90402286827F1004B4B71 /* ToDo */,
 			);
@@ -419,6 +439,7 @@
 				68B3484028812E62005267D9 /* GoogleService-Info.plist in Resources */,
 				4A417F9627E01A6600038ED8 /* Preview Assets.xcassets in Resources */,
 				4A417F9327E01A6600038ED8 /* Assets.xcassets in Resources */,
+				4A03BB4228962F0000E84E73 /* DeviceModels.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,6 +572,7 @@
 				4A896538288AD903009BE4B8 /* PersonThree.swift in Sources */,
 				4A89653A288ADAD2009BE4B8 /* PersonOne.swift in Sources */,
 				4A18AA1C286BCE8B00798D54 /* ListViewModel.swift in Sources */,
+				4A03BB48289633A000E84E73 /* SupportEmail.swift in Sources */,
 				4A89653C288ADAEA009BE4B8 /* PersonTwo.swift in Sources */,
 				4ACF4BBA28725E190074406B /* SwiftUIView.swift in Sources */,
 				4A417F8F27E01A6500038ED8 /* JollyCooksApp.swift in Sources */,
@@ -559,6 +581,8 @@
 				4A89653E288ADB04009BE4B8 /* PersonFour.swift in Sources */,
 				6810D2F9288F7B6200B4679D /* AadityaInfo.swift in Sources */,
 				4A7A1B1A288B5FC000116DE5 /* PhillipInfo.swift in Sources */,
+				4A03BB4028962DB900E84E73 /* UIDevice+Extension.swift in Sources */,
+				4A03BB4A289633BA00E84E73 /* Bundle+Extension.swift in Sources */,
 				4A896535288AC6DF009BE4B8 /* SettingsView.swift in Sources */,
 				4A5B0B892866DE2A0023481E /* ListView.swift in Sources */,
 				4A5B0B8C2866E29E0023481E /* ListRowView.swift in Sources */,
@@ -728,6 +752,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"JollyCooks/Preview Content\"";
 				DEVELOPMENT_TEAM = FRKVY4JJ8R;
@@ -738,8 +763,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.phillipshen.JollyCooks;
+				PRODUCT_BUNDLE_IDENTIFIER = phillipshen.JollyCooks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -751,6 +777,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"JollyCooks/Preview Content\"";
 				DEVELOPMENT_TEAM = FRKVY4JJ8R;
@@ -761,8 +788,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.phillipshen.JollyCooks;
+				PRODUCT_BUNDLE_IDENTIFIER = phillipshen.JollyCooks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
