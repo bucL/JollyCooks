@@ -37,6 +37,7 @@
 		6810D2F9288F7B6200B4679D /* AadityaInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6810D2F8288F7B6200B4679D /* AadityaInfo.swift */; };
 		68457ED12879D8A1007AC9E2 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68457ED02879D8A1007AC9E2 /* AuthView.swift */; };
 		68457ED3287C6C51007AC9E2 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68457ED2287C6C51007AC9E2 /* AuthViewModel.swift */; };
+		689F240328969BE300A0CA23 /* FirestoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689F240228969BE300A0CA23 /* FirestoreViewModel.swift */; };
 		68B3484028812E62005267D9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 68B3483F28812E62005267D9 /* GoogleService-Info.plist */; };
 		68B3484228813C30005267D9 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B3484128813C30005267D9 /* SignUpView.swift */; };
 		99B00EE538392E02D5CDA49D /* Pods_JollyCooks_JollyCooksUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B58C5882964A7AF5F2D5BCAA /* Pods_JollyCooks_JollyCooksUITests.framework */; };
@@ -98,6 +99,7 @@
 		6810D2F8288F7B6200B4679D /* AadityaInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AadityaInfo.swift; sourceTree = "<group>"; };
 		68457ED02879D8A1007AC9E2 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		68457ED2287C6C51007AC9E2 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		689F240228969BE300A0CA23 /* FirestoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreViewModel.swift; sourceTree = "<group>"; };
 		68B3483F28812E62005267D9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		68B3484128813C30005267D9 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		7FB7C4BEC86C5F4B2AC4892B /* Pods-JollyCooksTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JollyCooksTests.release.xcconfig"; path = "Target Support Files/Pods-JollyCooksTests/Pods-JollyCooksTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -271,6 +273,7 @@
 			children = (
 				4A18AA1B286BCE8B00798D54 /* ListViewModel.swift */,
 				68457ED2287C6C51007AC9E2 /* AuthViewModel.swift */,
+				689F240228969BE300A0CA23 /* FirestoreViewModel.swift */,
 			);
 			path = Viewmodel;
 			sourceTree = "<group>";
@@ -562,6 +565,7 @@
 				4A896535288AC6DF009BE4B8 /* SettingsView.swift in Sources */,
 				4A5B0B892866DE2A0023481E /* ListView.swift in Sources */,
 				4A5B0B8C2866E29E0023481E /* ListRowView.swift in Sources */,
+				689F240328969BE300A0CA23 /* FirestoreViewModel.swift in Sources */,
 				14EA8210288F829D00C051A1 /* ProfileView.swift in Sources */,
 				4A7A1B20288B5FE200116DE5 /* JoeInfo.swift in Sources */,
 				4A7A1B1E288B5FD500116DE5 /* AndrewInfo.swift in Sources */,

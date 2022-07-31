@@ -91,6 +91,7 @@ class AuthViewModel: ObservableObject {
     // ====================================================================================
     
     // Altered logout function from https://stackoverflow.com/questions/37943616/firebase-sign-out-not-working-in-swift and https://firebase.google.com/docs/auth/ios/password-auth
+
     func logOut() {
         do {
             try Auth.auth().signOut()                                                            // Firebase logout function.

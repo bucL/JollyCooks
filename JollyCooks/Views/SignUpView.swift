@@ -14,15 +14,18 @@ import FirebaseFirestore
 
 struct SignUpView: View {
     
-    @StateObject var viewModel = AuthViewModel()
+    @StateObject var viewModelAuth = AuthViewModel()
+    @StateObject var viewModelDB = FirestoreViewModel()
     
     var body: some View {
         
         VStack {
             
-            TextField("First Name", text: $viewModel.firstName)
-                .foregroundColor(Color.white)
-                .frame(width: 450, height: 50)
+            Button {} label: {
+                Text("Check if Data Retrieved")
+                    .padding()
+                
+            }
             
             
             
