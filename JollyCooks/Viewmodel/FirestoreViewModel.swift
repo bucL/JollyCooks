@@ -22,6 +22,8 @@ let db = Firestore.firestore()
 
 class FirestoreViewModel: ObservableObject {
     
+    @Published var firstName = ""
+    
     // Setting reference for users database.
     let docRef = db.collection("users").document("test@gmail.com")
     
@@ -30,13 +32,13 @@ class FirestoreViewModel: ObservableObject {
         // Allowing for retrieval of specific document from firestore database collection.
         docRef.getDocument { (document, error) in
             if let document = document, document.exists {
-                let property = document.get("firstname")
-                print("Document data: \(property ?? "nil")")
+                self.firstName = document.get("firstname") as! String
             } else {
                 print("Document does not exist")
             }
         }
         
+        print(firstName)
     }
     
 }
