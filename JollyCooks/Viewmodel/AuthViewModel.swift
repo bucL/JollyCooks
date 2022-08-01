@@ -20,7 +20,7 @@ class AuthViewModel: ObservableObject {
      ==========================================
      */
     
-    @Published var email = "test@gmail.com"
+    @Published var email = ""
     @Published var password = ""
     @Published var loginSuccess = false
     @Published var displayFailedLogin = false
@@ -82,6 +82,8 @@ class AuthViewModel: ObservableObject {
                 self.accountSuccess = true                                                       // Updating variable to display alert with success message directing user to go back and sign in with main page.
             }
         }
+     
+    
     }
     
     

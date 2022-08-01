@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import Firebase
 import FirebaseCore
 import FirebaseAuth
 import FirebaseFirestore
@@ -19,21 +18,42 @@ struct SignUpView: View {
     
     var body: some View {
         
-        VStack {
-            
-            Button {
-                viewModelDB.test()
-            } label: {
-                Text("Check if Data Retrieved")
+        ZStack {
+            Image("signup")
+                .resizable()
+                .ignoresSafeArea()
+                .blur(radius: 20)
+            VStack {
+                Image("Logo")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 400)
+                Text("Create an Account")
+                    .font(.title)
+                    .foregroundColor(.white)
+                    .fontWeight(.bold)
+                    .offset()
+                Group {
+                TextField("First Name", text: $viewModelAuth.firstName)
                     .padding()
+                    .border(.black)
+                    .background()
+                    .frame(width: 400, height: 50)
+                    .autocapitalization(.none)
+                TextField("Last Name", text: $viewModelAuth.lastName)
+                    .padding()
+                    .frame(width: 400, height: 50)
+                    .autocapitalization(.none)
+                    .background()
+                    .border(.black)
+                }
+                .offset(y: 50)
+                
+                
                 
             }
-            
-            
-            
-            
+            .offset(y: -100)
         }
-        .background(.orange)
     }
     
 }
