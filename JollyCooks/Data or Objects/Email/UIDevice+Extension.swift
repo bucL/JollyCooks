@@ -14,7 +14,7 @@ extension UIDevice{
             Bundle.main.decode([DeviceModel].self, from: "DeviceModels.json")
         }
     }
-    //This extensio allows us to find the raw name of the device model
+    //This extensio allows us to find the raw name of the device model and return base of the Devicemodels json file, its common name.
     var modelName: String {
         #if targetEnvironment(simulator)
         let identifier = ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"]!

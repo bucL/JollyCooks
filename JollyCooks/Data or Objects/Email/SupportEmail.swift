@@ -9,6 +9,7 @@
 import UIKit
 import SwiftUI
 
+//struct for what a basic support email will look like
 struct SupportEmail {
     let toAddress: String
     let subject: String
@@ -23,15 +24,17 @@ struct SupportEmail {
         \(messageHeader)
     --------------------------------------
     """
-    }
+    } //var body is all the information that will be printed at the top, the dashes is to indicate to the user to type below the dash the description of their problem.
     
+    
+    //OpenURLAction which will take the user to their mail app to sender which is defined by the var toAddress. 
     func send(openURL: OpenURLAction) {
         let urlString = "mailto:\(toAddress)?subject=\(subject.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) ?? "")&body=\(body.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) ?? "")"
         guard let url = URL(string: urlString) else { return }
         openURL(url) { accepted in
             if !accepted {
                 print("""
-                This device does not support email
+                This device does not support email please contact us at sddgroupc@gmail.com
                 \(body)
                 """
                 )
