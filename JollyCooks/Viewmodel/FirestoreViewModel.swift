@@ -24,6 +24,7 @@ class FirestoreViewModel: ObservableObject {
     
     var viewModelAuth = AuthViewModel()
     
+    private var email = AuthViewModel().email
     @Published var firstName = ""
     @Published var lastName = ""
     
@@ -65,9 +66,9 @@ class FirestoreViewModel: ObservableObject {
     }
     
     func addUser() {
-        let docRef = db.collection("users").document(viewModelAuth.newEmail)
+        let docRef = db.collection("users")
         
-        docRef.setData([
+        docRef.document(email).setData([
             "firstname": viewModelAuth.firstName,
             "lastname" : viewModelAuth.lastName
         ]) { err in

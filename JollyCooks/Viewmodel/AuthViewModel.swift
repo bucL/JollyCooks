@@ -75,7 +75,7 @@ class AuthViewModel: ObservableObject {
      */
     func signUp() {
         if newPassword == verifyPassword {
-            Auth.auth().createUser(withEmail: newEmail, password: newPassword) { result, error in    // Firebase signup function.
+            Auth.auth().createUser(withEmail: email, password: newPassword) { result, error in    // Firebase signup function.
                 if error != nil {                                                                    // Checking if the signup function
                     self.failedRegisterMessage = error!.localizedDescription                         // Updating Error Message to be displayed by alert in SignUpView.swift
                     self.failedRegister = true                                                       // Updating the variable to display the alert with the error message.
