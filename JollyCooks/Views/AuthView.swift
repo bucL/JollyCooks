@@ -13,7 +13,9 @@ struct AuthView: View {
     @StateObject var viewModel = AuthViewModel() // Referencing AuthViewModel to call functions from this file in the View.
     @StateObject var listViewModel: ListViewModel = ListViewModel() // Referncing ListViewModel to set environment Object in the view. 
 
-    
+    @Environment(\.colorScheme) var colorScheme // identify if the colorscheme changes from light to dark.
+
+
     
     var body: some View {
         
@@ -37,13 +39,13 @@ struct AuthView: View {
                             .autocapitalization(.none)
                             .disableAutocorrection(true)
                             .frame(width: 300, height: 50)
-                            .background(Color.white)
+                            .background(Color(UIColor.systemBackground))
                         SecureField("Password...", text: $viewModel.password)
                             .padding()
                             .autocapitalization(.none)
                             .disableAutocorrection(true)
                             .frame(width: 300, height: 50)
-                            .background(Color.white)
+                            .background(Color(UIColor.systemBackground))
                             .offset(y:-8)
                         
                         

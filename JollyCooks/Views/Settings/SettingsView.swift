@@ -24,7 +24,7 @@ struct SettingsView: View {
                     } label: {
                         Text("\(Image(systemName:"person.crop.circle.fill.badge.minus")) Log Out")
                     }
-                    .alert("\(viewModel.logoutMessage)", isPresented:$viewModel.displayLogoutMessage) { Button("OK", role: .cancel) {} } // Display alert when attmepting to logout. 
+                    .alert("\(viewModel.logoutMessage) Please quit and relaunch the app to login again.", isPresented:$viewModel.displayLogoutMessage) { Button("OK", role: .cancel) {} } // Display alert when attmepting to logout.
                     
                     
                     //.listRowBackground(Color.orange)

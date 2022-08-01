@@ -54,14 +54,29 @@ class FirestoreViewModel: ObservableObject {
         }
 
         docRef.getDocument{ (document, error) in
-            if let document = document, document.exists {
-                self.lastName = document.get("lastname") as! String
+            if let document = document, document.exists {                   //Same function as above for this block except it retrieves the lastname instead of
+                self.lastName = document.get("lastname") as! String         // the firstname. 
             } else {
                 print("Document does not exist")
             }
         }
         
         print(firstName, lastName)
+    }
+    
+    func addUser() {
+        let docRef = db.collection("users").document(viewModelAuth.newEmail)
+        
+        docRef.setData([
+            "firstname": viewModelAuth.firstName,
+            "lastname" : viewModelAuth.lastName
+        ]) { err in
+            if let err = err {
+                print("Error entering new user into database")
+            } else {
+                print("New User added Successfully")
+            }
+        }
     }
     
 }

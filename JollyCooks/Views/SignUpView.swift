@@ -27,32 +27,63 @@ struct SignUpView: View {
                 Image("Logo")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 400)
+                    .frame(width: 500)
                 Text("Create an Account")
                     .font(.title)
                     .foregroundColor(.white)
                     .fontWeight(.bold)
                     .offset()
-                Group {
-                TextField("First Name", text: $viewModelAuth.firstName)
-                    .padding()
-                    .border(.black)
-                    .background()
-                    .frame(width: 400, height: 50)
-                    .autocapitalization(.none)
-                TextField("Last Name", text: $viewModelAuth.lastName)
-                    .padding()
-                    .frame(width: 400, height: 50)
-                    .autocapitalization(.none)
-                    .background()
-                    .border(.black)
+                VStack (spacing: 0) {
+                    TextField("First Name...", text: $viewModelAuth.firstName)
+                        .padding()
+                        .background()
+                        .frame(width: 400, height: 50)
+                        .autocapitalization(.none)
+                        .disableAutocorrection(true)
+                    TextField("Last Name...", text: $viewModelAuth.lastName)
+                        .padding()
+                        .frame(width: 400, height: 50)
+                        .autocapitalization(.none)
+                        .disableAutocorrection(true)
+                        .background()
+                    TextField("Email...", text: $viewModelAuth.newEmail)
+                        .padding()
+                        .frame(width: 400, height: 50)
+                        .autocapitalization(.none)
+                        .background()
+                        .disableAutocorrection(true)
+                    SecureField("Password...", text: $viewModelAuth.newPassword)
+                        .padding()
+                        .frame(width: 400, height: 50)
+                        .autocapitalization(.none)
+                        .background()
+                        .disableAutocorrection(true)
+                    SecureField("Re-enter Password...", text: $viewModelAuth.verifyPassword)
+                        .padding()
+                        .frame(width:400, height: 50)
+                        .autocapitalization(.none)
+                        .disableAutocorrection(true)
+                        .background()
+                    
                 }
                 .offset(y: 50)
                 
-                
+                Button {
+                    viewModelAuth.signUp()
+                    viewModelDB.addUser()
+                } label: {
+                    Text("Sign Up")
+                        .frame(width: 100, height: 50)
+                        .foregroundColor(Color.white)
+                        .background(Color.orange)
+                        .cornerRadius(5)
+                        .offset(y: 100)
+                }
+                .alert("\(viewModelAuth.failedRegisterMessage)", isPresented:$viewModelAuth.failedRegister) { Button("OK", role: .cancel) {} }
+                .alert("Successfully Created Account! Please go back to the login page to sign in. ", isPresented:$viewModelAuth.accountSuccess) { Button("OK", role: .cancel) {} }
                 
             }
-            .offset(y: -100)
+            .offset(y: -150)
         }
     }
     

@@ -74,16 +74,19 @@ class AuthViewModel: ObservableObject {
      ==============================================================================================
      */
     func signUp() {
-        Auth.auth().createUser(withEmail: newEmail, password: newPassword) { result, error in    // Firebase signup function.
-            if error != nil {                                                                    // Checking if the signup function
-                self.failedRegisterMessage = error!.localizedDescription                         // Updating Error Message to be displayed by alert in SignUpView.swift
-                self.failedRegister = true                                                       // Updating the variable to display the alert with the error message.
-            } else {
-                self.accountSuccess = true                                                       // Updating variable to display alert with success message directing user to go back and sign in with main page.
+        if newPassword == verifyPassword {
+            Auth.auth().createUser(withEmail: newEmail, password: newPassword) { result, error in    // Firebase signup function.
+                if error != nil {                                                                    // Checking if the signup function
+                    self.failedRegisterMessage = error!.localizedDescription                         // Updating Error Message to be displayed by alert in SignUpView.swift
+                    self.failedRegister = true                                                       // Updating the variable to display the alert with the error message.
+                } else {
+                    self.accountSuccess = true                                                       // Updating variable to display alert with success message directing user to go back and sign in with main page.
+                }
             }
+        } else {
+                self.failedRegisterMessage = "Please check that the entered passwords are the same."
+                self.failedRegister = true
         }
-     
-    
     }
     
     
