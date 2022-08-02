@@ -22,7 +22,7 @@ struct AndrewInfo: View {
                 }
                 .shadow(radius: 7)
                 .padding()
-            Text("")//Suggestion from Phil: Maybe talk about how you designed early algorithms and prototypes for the app. 
+            Text("Hey there I'm Andrew!" + "\n" + "I am the planner and designer for JollyCooks. I work along Phil on the user interface of this app. But my main line of work is the algorithims and flowcharts that you won't get to see but it was the the first step we took in making JollyCooks.")//Suggestion from Phil: Maybe talk about how you designed early algorithms and prototypes for the app.
                 .foregroundColor(Color.white)
                 .frame(maxWidth: .infinity, alignment: .topLeading)
                 .padding()
