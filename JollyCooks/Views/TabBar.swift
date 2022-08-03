@@ -19,11 +19,6 @@ struct TabBar: View {
                     Label("Home", systemImage: "house")
                 }
             
-            Color.red
-                .tabItem {
-                    Label("Add", systemImage: "plus")
-                }
-            
             ListView()
                 .tabItem {
                     Label("ToDo", systemImage: "house")
