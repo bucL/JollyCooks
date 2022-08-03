@@ -1,5 +1,5 @@
-//
 //  Home.swift
+//
 //  JollyCooks
 //
 //  Created by Phillip Shen on 22/7/2022.
@@ -10,7 +10,7 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-            Image("homeview") // Dummy model for the hoemview because we didn't have enough time to finish this and Joe didn't do it cause he's lazy af. 
+            Image("homeview") // Dummy model for the hoemview because we didn't have enough time to finish this and Joe didn't do it cause he's lazy af.
             .resizable()
             .frame(width: 820, height: 1136)
             .offset(y:-20)
