@@ -19,7 +19,7 @@ struct AuthView: View {
     
     var body: some View {
         
-        if viewModel.loginSuccess == false {
+        if viewModel.loginSuccess == false {                                            // Checking if the User is currently logged in or not.
             
             NavigationView {
                 ZStack {
@@ -79,7 +79,7 @@ struct AuthView: View {
             
             
             
-        } else {                                                                        //Displaying the HomeView if the user successfully logs in. 
+        } else {                                                                        //Displaying the HomeView if the user successfully logs in.
 
                 SwiftUIView()
             .environmentObject(listViewModel)
