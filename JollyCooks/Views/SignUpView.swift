@@ -16,33 +16,10 @@ struct SignUpView: View {
     @StateObject var viewModelAuth = AuthViewModel()
     @StateObject var viewModelDB = FirestoreViewModel()
     
+    
+    
+    
     var body: some View {
-        if viewModelAuth.accountSuccess == true {
-            NavigationView {
-                ZStack {
-                    Image("signup")
-                        .resizable()
-                        .ignoresSafeArea()
-                        .blur(radius: 20)
-                    Button {
-                        viewModelDB.addUser()
-                        viewModelDB.addUser()
-                    } label: {
-                        NavigationLink(destination: AuthView()) {
-                            Text("Go back")
-                                .frame(width: 100, height: 50)
-                                .foregroundColor(Color.white)
-                                .background(Color.orange)
-                                .cornerRadius(5)
-                        }
-                        
-                    }
-                }
-            }
-            .navigationViewStyle(StackNavigationViewStyle())
-            .navigationBarHidden(true)
-            .navigationBarBackButtonHidden(true)
-        } else {
             ZStack {
                 Image("signup")
                     .resizable()
@@ -92,6 +69,7 @@ struct SignUpView: View {
                         Spacer()
                         Button {
                             viewModelAuth.signUp()
+                            //viewModelDB.addUser()
                         } label: {
                             Text("Sign Up")
                                 .frame(width: 100, height: 50)
@@ -113,7 +91,7 @@ struct SignUpView: View {
             }
             
         }
-    }
+    
     
 }
 
