@@ -16,7 +16,7 @@ struct TabBar: View {
             
             HomeView()
                 .tabItem {
-                    Label("Home", systemImage: "house")
+                    Label("Recipes", systemImage: "house")
                 }
             
             ListView()
