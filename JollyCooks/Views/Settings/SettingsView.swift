@@ -29,14 +29,18 @@ struct SettingsView: View {
                     
                     //.listRowBackground(Color.orange)
                     // Button(action: testing, label: Text(""))
-                    Text("\(Image(systemName: "power")) Deactivate")
                 }
                 .listRowBackground(Color("LightDarkColor"))
 
                 
                 
                 Section(header: Text("About Us")) {
-                    Text("\(Image(systemName: "questionmark.circle")) About JollyCooks")
+                    NavigationLink {
+                        JollycooksInfo()
+                        
+                    } label: {
+                        Text("\(Image(systemName: "questionmark.circle")) About JollyCooks")
+                    }
                 }
                 .listRowBackground(Color("LightDarkColor"))
 

@@ -8,8 +8,30 @@
 import SwiftUI
 
 struct ProfileView: View {
+    
+    let gradient = Gradient(colors: [.orange, .white])
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        ZStack{
+            
+            Rectangle()
+                .frame(width: 1000, height: 950,alignment: .bottom)
+                .foregroundColor(.white)
+                .padding(.top, 200)
+            
+            VStack{
+            
+            ProfileContent()
+                
+            }
+            
+            
+        }
+        
+        .background(LinearGradient(gradient: gradient, startPoint: .top, endPoint: .bottom))
+            .edgesIgnoringSafeArea(.all)
+        
     }
 }
 
