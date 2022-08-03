@@ -16,7 +16,7 @@
 import SwiftUI
 
 
-// Dummy model for the hoemview because we didn't have enough time to finish this and Joe didn't do it cause he's lazy af.
+// Dummy model for the homeview because we didn't have enough time to finish this and Joe didn't do it cause he's lazy af.
 
 
 struct HomeView: View{

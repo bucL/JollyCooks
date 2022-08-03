@@ -13,8 +13,8 @@ import FirebaseFirestore
 
 struct SignUpView: View {
     
-    @StateObject var viewModelAuth = AuthViewModel()
-    @StateObject var viewModelDB = FirestoreViewModel()
+    @StateObject var viewModelAuth = AuthViewModel()                                    // Referencing AuthViewModel for access to signUp function
+    @StateObject var viewModelDB = FirestoreViewModel()                                 // Referencing FirestoreViewModel for access to database related functions
     
     
     
