@@ -21,6 +21,12 @@ struct ProfileContent: View {
                 .foregroundColor(.white)
                 .position(x: 225, y: 100)
             
+            Image(systemName: "pencil")
+                .resizable()
+                .frame(width: 50, height: 50)
+                .position(x: 800, y: 100)
+                .foregroundColor(.white)
+            
             Rectangle()
                 .foregroundColor(Color(red: 169, green: 169, blue: 169))
                 .frame(width: 700, height: 380)
