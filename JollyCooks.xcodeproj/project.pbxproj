@@ -37,6 +37,7 @@
 		4AB90404286827FE004B4B71 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB90403286827FE004B4B71 /* ItemModel.swift */; };
 		4ACF4BB62872517E0074406B /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACF4BB52872517E0074406B /* TabBar.swift */; };
 		4ACF4BBA28725E190074406B /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACF4BB928725E190074406B /* SwiftUIView.swift */; };
+		4AD66153289A2EE200D5142F /* JollycooksInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD66152289A2EE200D5142F /* JollycooksInfo.swift */; };
 		625EC88F041E7B19728A6B0C /* Pods_JollyCooksTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D159A49AD4913778FCE1D5F /* Pods_JollyCooksTests.framework */; };
 		6810D2F9288F7B6200B4679D /* AadityaInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6810D2F8288F7B6200B4679D /* AadityaInfo.swift */; };
 		68457ED12879D8A1007AC9E2 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68457ED02879D8A1007AC9E2 /* AuthView.swift */; };
@@ -104,6 +105,7 @@
 		4AB90403286827FE004B4B71 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 		4ACF4BB52872517E0074406B /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		4ACF4BB928725E190074406B /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		4AD66152289A2EE200D5142F /* JollycooksInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JollycooksInfo.swift; sourceTree = "<group>"; };
 		6810D2F8288F7B6200B4679D /* AadityaInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AadityaInfo.swift; sourceTree = "<group>"; };
 		68457ED02879D8A1007AC9E2 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		68457ED2287C6C51007AC9E2 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
@@ -252,6 +254,7 @@
 			children = (
 				4A896534288AC6DF009BE4B8 /* SettingsView.swift */,
 				4A4CB0D9288F85CE0095DBFE /* EmailView.swift */,
+				4AD66152289A2EE200D5142F /* JollycooksInfo.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -598,6 +601,7 @@
 				4A629EDA2870438600FB489E /* NoItemsView.swift in Sources */,
 				68457ED12879D8A1007AC9E2 /* AuthView.swift in Sources */,
 				4AB90404286827FE004B4B71 /* ItemModel.swift in Sources */,
+				4AD66153289A2EE200D5142F /* JollycooksInfo.swift in Sources */,
 				14BF8DAA288CFDB60021769C /* (null) in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
