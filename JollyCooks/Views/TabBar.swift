@@ -29,7 +29,7 @@ struct TabBar: View {
                     Label("ToDo", systemImage: "house")
                 }
             
-            Color.red
+            ProfileView()
                 .tabItem {
                     Label("Profile", systemImage: "person")
                 }
