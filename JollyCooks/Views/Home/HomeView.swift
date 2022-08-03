@@ -10,9 +10,11 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {
         NavigationView{
-            Text("This is the home page")
-            .navigationTitle("Home")
+            ScrollView{
+                Text("This is the home page")
+            }
         }
+        .navigationTitle("Recipes")
         .navigationViewStyle(StackNavigationViewStyle())
     }
 }

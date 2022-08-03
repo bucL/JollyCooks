@@ -66,16 +66,16 @@ class FirestoreViewModel: ObservableObject {
     }
     
     func addUser() {
-        let docRef = db.collection("users")
+        let docRef = db.collection("users")                             // Referencing the collection present on firebase.
         
-        docRef.document(email).setData([
-            "firstname": viewModelAuth.firstName,
+        docRef.document(email).setData([                                // Firebase function that actually adds data to the database. 
+            "firstname": viewModelAuth.firstName,                       // Setting the variables on firebase to be equal to the ones present in the authentication view model so that they can be easily accessed across the app.
             "lastname" : viewModelAuth.lastName
         ]) { err in
             if let err = err {
-                print("Error entering new user into database")
+                print("Error entering new user into database")          // Error statement for if the function encounters an error
             } else {
-                print("New User added Successfully")
+                print("New User added Successfully")                    // Test code to print to console if function works as intended.
             }
         }
     }

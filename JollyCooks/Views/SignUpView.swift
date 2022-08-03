@@ -36,31 +36,33 @@ struct SignUpView: View {
                         .fontWeight(.bold)
                         .offset()
                     VStack (spacing: 0) {
-                        TextField("First Name...", text: $viewModelAuth.firstName)
+                        TextField("First Name...", text: $viewModelAuth.firstName)          //Referencing variables for the AuthViewModel to make them accessible to the sign up function
                             .padding()
                             .background()
                             .frame(width: 400, height: 50)
                             .autocapitalization(.none)
                             .disableAutocorrection(true)
-                        TextField("Last Name...", text: $viewModelAuth.lastName)
+                        TextField("Last Name...", text: $viewModelAuth.lastName)          //Referencing variables for the AuthViewModel to make them accessible to the sign up function
                             .padding()
                             .frame(width: 400, height: 50)
                             .autocapitalization(.none)
                             .disableAutocorrection(true)
                             .background()
-                        TextField("Email...", text: $viewModelAuth.email)
+                        TextField("Email...", text: $viewModelAuth.email)          //Referencing variables for the AuthViewModel to make them accessible to the sign up function
                             .padding()
                             .frame(width: 400, height: 50)
                             .autocapitalization(.none)
                             .background()
                             .disableAutocorrection(true)
-                        SecureField("Password...", text: $viewModelAuth.newPassword)
+                        //Using SecureField to hide the password created by the user to prevent a lack of security
+                        SecureField("Password...", text: $viewModelAuth.newPassword)          //Referencing variables for the AuthViewModel to make them accessible to the sign up function
                             .padding()
                             .frame(width: 400, height: 50)
                             .autocapitalization(.none)
                             .background()
                             .disableAutocorrection(true)
-                        SecureField("Re-enter Password...", text: $viewModelAuth.verifyPassword)
+                        //Using SecureField to hide the password created by the user to prevent a lack of security
+                        SecureField("Re-enter Password...", text: $viewModelAuth.verifyPassword)          //Referencing variables for the AuthViewModel to make them accessible to the sign up function
                             .padding()
                             .frame(width:400, height: 50)
                             .autocapitalization(.none)
@@ -68,8 +70,8 @@ struct SignUpView: View {
                             .background()
                         Spacer()
                         Button {
-                            viewModelAuth.signUp()
-                            //viewModelDB.addUser()
+                            viewModelAuth.signUp() // Referncing the SignUp function from the AuthViewModel to create a new account.
+                            //viewModelDB.addUser() Function commented out as it results in a crash and is not viable to fix within the time period that is left as of 3/8/22
                         } label: {
                             Text("Sign Up")
                                 .frame(width: 100, height: 50)
@@ -78,8 +80,9 @@ struct SignUpView: View {
                                 .cornerRadius(5)
                             
                         }
-                        
+                        // Displaying alerts for if the User encounters an error in creating the account
                         .alert("\(viewModelAuth.failedRegisterMessage)", isPresented:$viewModelAuth.failedRegister) { Button("OK", role: .cancel) {} }
+                        // Displaying alert notifying user to navigate back to the login page once they successully make an account. 
                         .alert("Successfully Created Account! Please go back to the login page to sign in. ", isPresented:$viewModelAuth.accountSuccess) { Button("OK", role: .cancel) {} }
                         
                         Spacer()

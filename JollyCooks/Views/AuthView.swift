@@ -58,9 +58,12 @@ struct AuthView: View {
                                 .foregroundColor(Color.white)
                                 .background(Color.orange)
                                 .cornerRadius(5)
-                            
+                        
+                            // Akert to display error when the User fails to login.
                         }.alert("\(viewModel.failedLoginMessage)", isPresented:$viewModel.displayFailedLogin) { Button("OK", role: .cancel) {} }
                         
+                        
+                        //Navigation Link to direct user to the signup view if they want to create a new account.
                         NavigationLink(destination: SignUpView()) {
                             Text("Sign Up")
                                 .frame(width: 100, height: 50)
