@@ -29,14 +29,18 @@ struct SettingsView: View {
                     
                     //.listRowBackground(Color.orange)
                     // Button(action: testing, label: Text(""))
-                    Text("\(Image(systemName: "power")) Deactivate")
                 }
                 .listRowBackground(Color("LightDarkColor"))
 
                 
                 
                 Section(header: Text("About Us")) {
-                    Text("\(Image(systemName: "questionmark.circle")) About JollyCooks")
+                    NavigationLink {
+                        JollycooksInfo()
+                        
+                    } label: {
+                        Text("\(Image(systemName: "questionmark.circle")) About JollyCooks")
+                    }
                 }
                 .listRowBackground(Color("LightDarkColor"))
 
@@ -76,14 +80,16 @@ struct SettingsView: View {
                     
                     //sorry joe the image I had, had only three male avatar and I wasn't bothered to find a new palatte of avatars  so I just gave you a female avatar.
                 }
-                
-                Button {
-                    email.send(openURL: openURL)
-                } label: {
-                    Text("\(Image(systemName: "headphones")) Contact Us")
-                        .foregroundColor(Color.red)
+                Section(footer: Text("Alternatively, contact us at sddgroupc@gmail.com")){
+                    Button {
+                        email.send(openURL: openURL)
+                    } label: {
+                        Text("\(Image(systemName: "headphones")) Contact Us")
+                            .foregroundColor(Color.red)
+                    }
+                    .listRowBackground(Color("LightDarkColor"))
                 }
-                .listRowBackground(Color("LightDarkColor"))
+                
                 
             }// ENd of List
             .onAppear {
