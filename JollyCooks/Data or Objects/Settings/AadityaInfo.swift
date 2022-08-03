@@ -22,7 +22,7 @@ struct AadityaInfo: View {
                 }
                 .shadow(radius: 7)
                 .padding()
-            Text("")//Suggestion from Phil: Maybe talk about how you were the brain of the app. Cuz u literally coded like 90% of our app
+            Text("Hey there I'm Aaditya!" + "\n" + "I am the main coder for JollyCooks and am responsible for the user authentication system of the app. I also created the home page with all the recipes and am in charge of updating.")//Suggestion from Phil: Maybe talk about how you were the brain of the app. Cuz u literally coded like 90% of our app
                 .foregroundColor(Color.white)
                 .frame(maxWidth: .infinity, alignment: .topLeading)
                 .padding()
