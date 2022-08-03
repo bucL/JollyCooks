@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14960E272899EC7C00974280 /* ProfileContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14960E262899EC7C00974280 /* ProfileContent.swift */; };
 		14BF8DAA288CFDB60021769C /* (null) in Sources */ = {isa = PBXBuildFile; };
 		14EA8210288F829D00C051A1 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EA820F288F829D00C051A1 /* ProfileView.swift */; };
 		4A03BB4028962DB900E84E73 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A03BB3F28962DB900E84E73 /* UIDevice+Extension.swift */; };
@@ -67,6 +68,7 @@
 
 /* Begin PBXFileReference section */
 		0F1E71ACB3A63B07B983607A /* Pods_JollyCooks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JollyCooks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		14960E262899EC7C00974280 /* ProfileContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileContent.swift; sourceTree = "<group>"; };
 		14EA820F288F829D00C051A1 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		1A093570280E1EEC1260B6CC /* Pods-JollyCooksTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JollyCooksTests.debug.xcconfig"; path = "Target Support Files/Pods-JollyCooksTests/Pods-JollyCooksTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1D159A49AD4913778FCE1D5F /* Pods_JollyCooksTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JollyCooksTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -232,6 +234,7 @@
 				68457ED02879D8A1007AC9E2 /* AuthView.swift */,
 				68B3484128813C30005267D9 /* SignUpView.swift */,
 				14EA820F288F829D00C051A1 /* ProfileView.swift */,
+				14960E262899EC7C00974280 /* ProfileContent.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -585,6 +588,7 @@
 				6810D2F9288F7B6200B4679D /* AadityaInfo.swift in Sources */,
 				4A7A1B1A288B5FC000116DE5 /* PhillipInfo.swift in Sources */,
 				4A03BB4028962DB900E84E73 /* UIDevice+Extension.swift in Sources */,
+				14960E272899EC7C00974280 /* ProfileContent.swift in Sources */,
 				4A03BB4A289633BA00E84E73 /* Bundle+Extension.swift in Sources */,
 				4A896535288AC6DF009BE4B8 /* SettingsView.swift in Sources */,
 				4A5B0B892866DE2A0023481E /* ListView.swift in Sources */,
