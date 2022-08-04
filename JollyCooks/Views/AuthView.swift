@@ -19,7 +19,7 @@ struct AuthView: View {
     
     var body: some View {
         
-        if viewModel.loginSuccess == false {
+        if viewModel.loginSuccess == false {                                            // Checking if the User is currently logged in or not.
             
             NavigationView {
                 ZStack {
@@ -34,13 +34,13 @@ struct AuthView: View {
                             .resizable()
                             .scaledToFit()
                             .frame(width: 500)
-                        TextField("Username...", text: $viewModel.email)
+                        TextField("Username...", text: $viewModel.email)                // Referencing AuthViewModel().email to let signIn function work
                             .padding()
                             .autocapitalization(.none)
                             .disableAutocorrection(true)
                             .frame(width: 300, height: 50)
                             .background(Color(UIColor.systemBackground))
-                        SecureField("Password...", text: $viewModel.password)
+                        SecureField("Password...", text: $viewModel.password)           // Referencing AuthViewModel().password to let signIn function work
                             .padding()
                             .autocapitalization(.none)
                             .disableAutocorrection(true)
@@ -50,8 +50,7 @@ struct AuthView: View {
                         
                         
                         Button {
-                            viewModel.login()
-                            //Calling the login function from the AuthViewModel
+                            viewModel.login()                                           //Calling the login function from the AuthViewModel
                         } label: {
                             Text("Login")
                                 .frame(width: 100, height: 50)
@@ -63,8 +62,8 @@ struct AuthView: View {
                         }.alert("\(viewModel.failedLoginMessage)", isPresented:$viewModel.displayFailedLogin) { Button("OK", role: .cancel) {} }
                         
                         
-                        //Navigation Link to direct user to the signup view if they want to create a new account.
-                        NavigationLink(destination: SignUpView()) {
+                        
+                        NavigationLink(destination: SignUpView()) {                     //Navigation Link to direct user to the signup view if they want to create a new account.
                             Text("Sign Up")
                                 .frame(width: 100, height: 50)
                                 .foregroundColor(Color.white)
@@ -80,7 +79,7 @@ struct AuthView: View {
             
             
             
-        } else {
+        } else {                                                                        //Displaying the HomeView if the user successfully logs in.
 
                 SwiftUIView()
             .environmentObject(listViewModel)

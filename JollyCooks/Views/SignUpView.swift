@@ -13,8 +13,8 @@ import FirebaseFirestore
 
 struct SignUpView: View {
     
-    @StateObject var viewModelAuth = AuthViewModel()
-    @StateObject var viewModelDB = FirestoreViewModel()
+    @StateObject var viewModelAuth = AuthViewModel()                                    // Referencing AuthViewModel for access to signUp function
+    @StateObject var viewModelDB = FirestoreViewModel()                                 // Referencing FirestoreViewModel for access to database related functions
     
     
     
@@ -71,7 +71,7 @@ struct SignUpView: View {
                         Spacer()
                         Button {
                             viewModelAuth.signUp() // Referncing the SignUp function from the AuthViewModel to create a new account.
-                            //viewModelDB.addUser() Function commented out as it results in a crash and is not viable to fix within the time period that is left as of 3/8/22
+                            //viewModelDB.addUser() // Function commented out as it results in a crash and is not viable to fix within the time period that is left as of 3/8/22
                         } label: {
                             Text("Sign Up")
                                 .frame(width: 100, height: 50)
@@ -82,7 +82,7 @@ struct SignUpView: View {
                         }
                         // Displaying alerts for if the User encounters an error in creating the account
                         .alert("\(viewModelAuth.failedRegisterMessage)", isPresented:$viewModelAuth.failedRegister) { Button("OK", role: .cancel) {} }
-                        // Displaying alert notifying user to navigate back to the login page once they successully make an account. 
+                        // Displaying alert notifying user to navigate back to the login page once they successully make an account.
                         .alert("Successfully Created Account! Please go back to the login page to sign in. ", isPresented:$viewModelAuth.accountSuccess) { Button("OK", role: .cancel) {} }
                         
                         Spacer()
