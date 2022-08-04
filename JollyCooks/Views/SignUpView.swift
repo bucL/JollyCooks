@@ -71,7 +71,7 @@ struct SignUpView: View {
                         Spacer()
                         Button {
                             viewModelAuth.signUp() // Referncing the SignUp function from the AuthViewModel to create a new account.
-                            viewModelDB.addUser() // Function commented out as it results in a crash and is not viable to fix within the time period that is left as of 3/8/22
+                            //viewModelDB.addUser() // Function commented out as it results in a crash and is not viable to fix within the time period that is left as of 3/8/22
                         } label: {
                             Text("Sign Up")
                                 .frame(width: 100, height: 50)
