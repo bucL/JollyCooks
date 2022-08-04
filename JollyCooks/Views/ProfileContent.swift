@@ -3,7 +3,7 @@
 //  JollyCooks
 //
 //  Created by Andrew Chatfield on 2/8/2022.
-//
+//The content for the profile page, profile picture, name, following num, followers num, bibliography and links.
 
 import SwiftUI
 
@@ -20,7 +20,7 @@ struct ProfileContent: View {
                 .bold()
                 .foregroundColor(.white)
                 .position(x: 225, y: 100)
-            
+
             Image(systemName: "pencil")
                 .resizable()
                 .frame(width: 50, height: 50)
